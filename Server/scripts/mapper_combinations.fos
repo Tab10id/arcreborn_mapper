@@ -1,0 +1,55 @@
+import void DrawFullTileSet() from "mapper_tilebrush";
+import void ClearTiles() from "mapper_tilebrush";
+import void ChangeBrushMode() from "mapper_tilebrush";
+import void ChangeTileSet(uint8) from "mapper_tilebrush";
+
+
+class CDrawFullTileSet : IKeyboardCombination
+{
+    void OnCombo()
+    {
+        DrawFullTileSet();
+    }
+    CDrawFullTileSet()
+    {
+        KeyboardCombinations.insertLast(CKeyboardCombination(DIK_LCONTROL, DIK_LMENU, 0, DIK_P, this));
+    }
+}
+class CClearTiles : IKeyboardCombination
+{
+    void OnCombo()
+    {
+        ClearTiles();
+    }
+    CClearTiles()
+    {
+        KeyboardCombinations.insertLast(CKeyboardCombination(DIK_LCONTROL, DIK_LMENU, 0, DIK_O, this));
+    }
+}
+class CChangeBrushModeState : IKeyboardCombination
+{
+    void OnCombo()
+    {
+        ChangeBrushMode();
+    }
+    CChangeBrushModeState()
+    {
+        KeyboardCombinations.insertLast(CKeyboardCombination(DIK_LMENU, 0, 0, DIK_B, this));
+    }
+}
+class CTileBrushChangeTileSetKeyPress : IKeyPressUp
+{
+    void OnKeyPress(uint8 key)
+    {
+        ChangeTileSet(key);
+    }
+    CTileBrushChangeTileSetKeyPress()
+    {
+        KeyPressEventHandlers.insertLast(CKeyPressEventHandlers(this));
+    }
+}
+
+CDrawFullTileSet      drawFullTileSet;
+CClearTiles           clearTiles;
+CChangeBrushModeState changeBrushModeState;
+CTileBrushChangeTileSetKeyPress tileBrushChangeTileSetKeyPress;

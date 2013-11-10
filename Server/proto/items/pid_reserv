@@ -1,0 +1,19 @@
+arc                1     - 499
+containers         500   - 3500
+engine             1000  - 7000
+static             1900  - 4100
+grid               2000  - 4000
+
+decor              5700  - 12000
+doors_places       5700  - 12000
+walls              5700  - 12000
+windows_places     5700  - 12000
+
+doors              15000 - 20000
+windows            15000 - 20000
+
+light              20000 - 20999
+
+effect             21000 - .....
+
+weapon, ammo       23000 - 23999

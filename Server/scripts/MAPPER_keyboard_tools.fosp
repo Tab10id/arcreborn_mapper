@@ -1,0 +1,200 @@
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+
+interface IKeyPressUp{
+	void OnKeyPress(uint8);
+}
+interface IKeyPressDown{
+	void OnKeyPress(uint8);
+}
+interface IKeyboardCombination{
+	void OnCombo();
+}
+class CKeyboardCombination
+{
+	uint8[]SpecialKeys;
+	uint8 Key;
+	IKeyboardCombination@CallbackComboPress;
+	CKeyboardCombination(uint8 skey1,uint8 skey2,uint8 skey3,uint8 key,IKeyboardCombination@callback)
+	{
+		SpecialKeys.resize(3);
+		SpecialKeys[0]=skey1;
+		SpecialKeys[1]=skey2;
+		SpecialKeys[2]=skey3;
+		Key=key;
+		@CallbackComboPress=callback;
+	}
+}
+class CKeyPressEventHandlers
+{
+	IKeyPressUp@CallbackPress;
+	CKeyPressEventHandlers(IKeyPressUp@callback)
+	{
+		@CallbackPress=callback;
+	}
+}
+
+class CComboKeyPressed{
+	uint8[]SpecialKeys;
+	uint8 Key;
+	CComboKeyPressed()
+	{
+		SpecialKeys.resize(3);
+		SpecialKeys[0]=0;
+		SpecialKeys[1]=0;
+		SpecialKeys[2]=0;
+	}
+	void ClearKeys()
+	{
+		for(uint8 i=0;i<SpecialKeys.length();i++)
+		{
+			SpecialKeys[i]=0;
+		}
+		Key=0;
+	}
+	void AddSpecialKey(uint8 key)
+	{
+		for(uint8 i=0;i<SpecialKeys.length();i++)
+		{
+			if(SpecialKeys[i]==0)
+			{
+				SpecialKeys[i]=key;
+				return;
+			}
+		}
+	}
+	void AddKey(uint8 key)
+	{
+		if(isSpecial(key))
+		{
+			AddSpecialKey(key);
+		}
+		else
+		{
+			if(SpecialKeys[0]!=0)
+			{
+				Key=key;
+			}
+		}
+	}
+}
+
+bool isSpecial(uint8 key)
+{
+	if((key==0x1D)or(key==0x9D)or(key==0x38)or(key==0xB8)or(key==0x2A)or(key==0x36))
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+
+bool ArraysAreEqual(uint8[]array1,uint8[]array2)
+{
+	uint8 length=array1.length();
+	if(length!=array2.length())
+	{
+		return false;
+	}
+	for(uint8 i=0;i<length;i++)
+	{
+		if(array1[i]!=array2[i])
+		{
+			return false;
+		}
+	}
+	return true;
+}
+
+CKeyboardCombination[]KeyboardCombinations;
+CKeyPressEventHandlers[]KeyPressEventHandlers;
+CComboKeyPressed KeyPressed;
+
+void CheckKeyboardCombo()
+{
+	for(uint i=0;i<KeyboardCombinations.length();i++)
+	{
+		if(ArraysAreEqual(KeyboardCombinations[i].SpecialKeys,KeyPressed.SpecialKeys)and KeyboardCombinations[i].Key==KeyPressed.Key)
+		{
+			KeyboardCombinations[i].CallbackComboPress.OnCombo();
+		}
+	}
+}
+
+void RunKeyPressEventHandlers(uint8 key)
+{
+	for(uint i=0;i<KeyPressEventHandlers.length();i++)
+	{
+		KeyPressEventHandlers[i].CallbackPress.OnKeyPress(key);
+	}
+}   
+
+bool key_down(uint8 key,string&keyText)
+{
+	KeyPressed.AddKey(key);
+	CheckKeyboardCombo();
+	return false;
+}
+
+bool key_up(uint8 key,string&keyText)
+{
+	KeyPressed.ClearKeys();
+	RunKeyPressEventHandlers(key);
+	return false;
+}
+
+import void DrawFullTileSet()from"mapper_tilebrush";
+import void ClearTiles()from"mapper_tilebrush";
+import void ChangeBrushMode()from"mapper_tilebrush";
+import void ChangeTileSet(uint8)from"mapper_tilebrush"; 
+
+class CDrawFullTileSet:IKeyboardCombination
+{
+	void OnCombo()
+	{
+		DrawFullTileSet();
+	}
+	CDrawFullTileSet()
+	{
+		KeyboardCombinations.insertLast(CKeyboardCombination(0x1D,0x38,0,0x19,this));
+	}
+}
+class CClearTiles:IKeyboardCombination
+{
+	void OnCombo()
+	{
+		ClearTiles();
+	}
+	CClearTiles()
+	{
+		KeyboardCombinations.insertLast(CKeyboardCombination(0x1D,0x38,0,0x18,this));
+	}
+}
+class CChangeBrushModeState:IKeyboardCombination
+{
+	void OnCombo()
+	{
+		ChangeBrushMode();
+	}
+	CChangeBrushModeState()
+	{
+		KeyboardCombinations.insertLast(CKeyboardCombination(0x38,0,0,0x30,this));
+	}
+}
+class CTileBrushChangeTileSetKeyPress:IKeyPressUp
+{
+	void OnKeyPress(uint8 key)
+	{
+		ChangeTileSet(key);
+	}
+	CTileBrushChangeTileSetKeyPress()
+	{
+		KeyPressEventHandlers.insertLast(CKeyPressEventHandlers(this));
+	}
+}
+
+CDrawFullTileSet drawFullTileSet;
+CClearTiles clearTiles;
+CChangeBrushModeState changeBrushModeState;
+CTileBrushChangeTileSetKeyPress tileBrushChangeTileSetKeyPress;

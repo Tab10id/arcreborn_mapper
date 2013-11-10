@@ -1,0 +1,209 @@
+// Stats
+#define ST_ALIGNMENT                             ( 120 )
+#define ST_MAX_MANA                              ( 121 ) // Мана, энергия. 
+#define ST_MANA                                  ( 122 ) // Мана, энергия. 
+#define ST_APTITUDE                              ( 123 ) // Магия... или техника?
+#define ST_RACE                                  ( 124 ) // Раса персонажа, НПС. 
+#define ST_PORTRAIT                              ( 125 ) // Портрет. 
+#define ST_HP_PERCENT                            ( 126 ) // Очки Жизней в процентах. 
+#define ST_MANA_PERCENT                          ( 127 ) // Очки Маны в процентах.
+#define ST_FREE_POINTS                           ( 128 ) // Непотраенные очки скиллов. 
+#define ST_HP_BONUS                              ( 129 ) // Бонус к очкам жизней. 
+#define ST_MP_BONUS                              ( 130 ) // Бонус к энергии. 
+
+#define ST_ARC_START                             ( 131 )
+#define ST_STRENGTH                              ( 131 ) // Сила.
+#define ST_CONSTITUTION                          ( 132 ) // Конституция, телосложение. 
+#define ST_DEXTERITY                             ( 133 ) // Ловкость.
+#define ST_BEAUTY                                ( 134 ) // Красота.
+#define ST_INTELLECT                             ( 135 ) // Интеллект.
+#define ST_WILLPOWER                             ( 136 ) // Сила Воли. 
+#define ST_PERCEPTION                            ( 137 ) // Восприятие. 
+#define ST_CHARISMA                              ( 138 ) // Харизма.
+#define ST_BIO                                   ( 139 )
+#define ST_MAGIC_RESIST                          ( 140 )
+#define ST_FIRE_RESIST                           ( 141 )
+#define ST_POISON_RESIST                         ( 142 )
+#define ST_ELECTRIC_RESIST                       ( 143 )
+
+#define ST_BODY_TYPE                             ( 67 ) // Тип криттера или брони под криттер. 
+#define ST_DAMAGE_TYPE                           ( 69 ) // Тип дамаг. 
+#define ST_VAR0                                  ( 90 )
+#define ST_VAR1                                  ( 91 )
+#define ST_VAR2                                  ( 92 )
+#define ST_VAR3                                  ( 93 )
+#define ST_VAR4                                  ( 94 )
+#define ST_VAR5                                  ( 95 )
+#define ST_VAR6                                  ( 96 )
+#define ST_VAR7                                  ( 97 )
+#define ST_VAR8                                  ( 98 )
+#define ST_VAR9                                  ( 99 )
+#define ST_PLAYER_KARMA                          ( 100 ) // Карма персонажа.
+#define ST_LAST_STEAL_CR_ID                      ( 108 ) // ID последнего обворованного криттера. 
+#define ST_STEAL_COUNT                           ( 109 ) // Кол-во обворованного. 
+#define ST_LAST_WEAPON_USE                       ( 111 ) // Последнее использованое оружие.
+#define ST_DEAD_BLOCKER_ID                       ( 113 )
+
+// Skills
+#define SK_BOW                                  ( 830 ) // Лук.
+#define SK_BOW_LVL                              ( 831 )
+#define SK_DODGE                                ( 832 ) // Уклонение.
+#define SK_DODGE_LVL                            ( 833 )
+#define SK_MELEE                                ( 834 ) // Мили.
+#define SK_MELEE_LVL                            ( 835 )
+#define SK_THROW                                ( 836 ) // Метание.
+#define SK_THROW_LVL                            ( 837 )
+
+#define SK_BACKSTAB                             ( 838 ) // Удар Сзади.
+#define SK_BACKSTAB_LVL                         ( 839 )
+#define SK_THIEF                                ( 840 ) // Воровство.
+#define SK_THIEF_LVL                            ( 841 )
+#define SK_TRAP                                 ( 842 ) // Ставить ловушки.
+#define SK_TRAP_LVL                             ( 843 )
+#define SK_SNEAK                                ( 844 ) // Скрытность.
+#define SK_SNEAK_LVL                            ( 845 )
+
+#define SK_GAMBLE                               ( 846 ) // Игра.
+#define SK_GAMBLE_LVL                           ( 847 )
+#define SK_TRADE                                ( 848 ) // Торговля.
+#define SK_TRADE_LVL                            ( 849 )
+#define SK_DOCTOR                               ( 850 ) // Доктор.
+#define SK_DOCTOR_LVL                           ( 851 )
+#define SK_PERSUADE                             ( 852 ) // Разговорчивость, красноречие.
+#define SK_PERSUADE_LVL                         ( 853 )
+
+#define SK_REPAIR                               ( 854 ) // Ремонт.
+#define SK_REPAIR_LVL                           ( 855 )
+#define SK_PICK_LOCK                            ( 856 ) // Взлом.
+#define SK_PICK_LOCK_LVL                        ( 857 )
+#define SK_FIREARMS                             ( 858 ) // Огнестрел.
+#define SK_FIREARMS_LVL                         ( 859 )
+#define SK_MECHANIC                             ( 860 ) // Обезвреживание ловушек.
+#define SK_MECHANIC_LVL                         ( 861 )
+
+#define SK_GID                                  ( 862 ) // Гид.
+#define SK_GID_LVL                              ( 863 )
+#define SK_MINING                               ( 864 ) // Шахтёрское дело.
+#define SK_MINING_LVL                           ( 865 )
+#define SK_FARMING                              ( 866 ) // Фермерское дело.
+#define SK_FARMING_LVL                          ( 867 )
+#define SK_COOKING                              ( 868 ) // Поварское дело.
+#define SK_COOKING_LVL                          ( 869 )
+
+// Technology
+#define SK_HERBOLOGY                            ( 870 ) // Гербология
+#define SK_CHEMISTRY                            ( 871 ) // Химия
+#define SK_ELECTRIC                             ( 872 ) // Электрика
+#define SK_EXPLOSIVES                           ( 873 ) // Взрывное дело
+#define SK_GUN_SMITHY                           ( 874 ) // Оружейник
+#define SK_MECHANICAL                           ( 875 ) // Механик
+#define SK_SMITHY                               ( 876 ) // Кузнечество
+#define SK_THERAPEUTICS                         ( 877 ) // Терапевтика
+
+// Magic
+#define SK_MAGIC_START                          ( 878 ) // Начальный уровень магии.
+#define SK_CONVEYANCE                           ( 878 ) // Магия перемещения.
+#define SK_DIVINATION                           ( 880 ) // Магия предсказания.
+#define SK_AIR                                  ( 880 ) // Магия воздуха и ветра.
+#define SK_EARTH                                ( 881 ) // Магия земли.
+#define SK_FIRE                                 ( 882 ) // Магия огня.
+#define SK_WATER                                ( 883 ) // Магия воды.
+#define SK_FORCE                                ( 884 ) // Магия Силы, или электричества.
+#define SK_MENTAL                               ( 885 ) // Ментальная школа магии.
+#define SK_META                                 ( 886 ) // Магия против магии.
+#define SK_MORPH                                ( 887 ) // Магия Морф - "Сна"
+#define SK_NATURE                               ( 888 ) // Магия природы.
+#define SK_NECROMANTIC_BLACK                    ( 889 ) // Темная некромантия.
+#define SK_NECROMANTIC_WHITE                    ( 890 ) // Белая некромантия.
+#define SK_PHANTASM                             ( 891 ) // Магия иллюзий.
+#define SK_SUMMONING                            ( 892 ) // Магия призыва.
+#define SK_TEMPORAL                             ( 893 ) // Магия Темпуса - Времени.
+#define SK_MAGIC_END                            ( 894 ) // Конечный уровень магии.
+
+// ArmorSize
+#define ARMOR_SIZE_NORMAL                       ( 0 ) // Размер брони - нормальный. 
+#define ARMOR_SIZE_SMALL                        ( 1 ) // Размер брони - маленький. 
+#define ARMOR_SIZE_BIG                          ( 2 ) // Размер брони - большой. 
+#define ARMOR_SIZE_ORK                          ( 3 ) // Размер брони - для Орков. 
+#define ARMOR_SIZE_NONE                         ( 4 ) // Броня без размера, для троллей. 
+
+// Regparams macros
+#define STAT_STR              ( 0 )
+#define STAT_CON              ( 1 )
+#define STAT_DEX              ( 2 )
+#define STAT_BEA              ( 3 )
+#define STAT_INT              ( 4 )
+#define STAT_WIL              ( 5 )
+#define STAT_PER              ( 6 )
+#define STAT_CHA              ( 7 )
+#define STAT_HP               ( 8 )
+#define STAT_MP               ( 9 )
+#define STAT_POINTS           ( 10 )
+#define STAT_WEIGHT           ( 11 )
+#define STAT_AC_BONUS         ( 12 )
+#define STAT_SPEED            ( 13 ) // YOBA action points
+#define STAT_DMG              ( 14 )
+#define STAT_HP_ADD           ( 15 )
+#define STAT_MP_ADD           ( 16 )
+#define STAT_CRIT_CHANCE      ( 17 )
+#define STAT_MAX_FOLLOWERS    ( 18 )
+#define STAT_BASE_REACTION    ( 19 )
+
+#define STAT_RESIST_BASE      ( 20 )
+#define STAT_RESIST_MAGIC     ( 21 )
+#define STAT_RESIST_FIRE      ( 22 )
+#define STAT_RESIST_POISON    ( 23 )
+#define STAT_RESIST_ELECTRIC  ( 24 )
+
+#define STAT_SKILL_1_MOD      ( 25 )
+#define STAT_SKILL_2_MOD      ( 26 )
+#define STAT_SKILL_3_MOD      ( 27 )
+#define STAT_SKILL_4_MOD      ( 28 )
+#define STAT_SKILL_5_MOD      ( 29 )
+#define STAT_MAGIC_MOD        ( 30 )
+#define STAT_TECH_MOD         ( 31 )
+
+#define STAT_APPLITUDE        ( 32 )
+#define STAT_POISON_IN        ( 33 )
+#define STAT_HEALTH_RATE      ( 34 )
+#define STAT_BIO              ( 35 )
+// offset for skills
+#define BEGIN_STAT            ( 35 )
+
+#define SKILL_COMBAT_1        ( BEGIN_STAT + 1 )
+#define SKILL_COMBAT_2        ( BEGIN_STAT + 2 )
+#define SKILL_COMBAT_3        ( BEGIN_STAT + 3 )
+#define SKILL_COMBAT_4        ( BEGIN_STAT + 4 )
+
+#define SKILL_THIEF_1         ( BEGIN_STAT + 5 )
+#define SKILL_THIEF_2         ( BEGIN_STAT + 6 )
+#define SKILL_THIEF_3         ( BEGIN_STAT + 7 )
+#define SKILL_THIEF_4         ( BEGIN_STAT + 8 )
+
+#define SKILL_SOCIAL_1        ( BEGIN_STAT + 9 )
+#define SKILL_SOCIAL_2        ( BEGIN_STAT + 10 )
+#define SKILL_SOCIAL_3        ( BEGIN_STAT + 11 )
+#define SKILL_SOCIAL_4        ( BEGIN_STAT + 12 )
+
+#define SKILL_TECH_1          ( BEGIN_STAT + 13 )
+#define SKILL_TECH_2          ( BEGIN_STAT + 14 )
+#define SKILL_TECH_3          ( BEGIN_STAT + 15 )
+#define SKILL_TECH_4          ( BEGIN_STAT + 16 )
+
+#define SKILL_COMMON_1        ( BEGIN_STAT + 17 )
+#define SKILL_COMMON_2        ( BEGIN_STAT + 18 )
+#define SKILL_COMMON_3        ( BEGIN_STAT + 19 )
+#define SKILL_COMMON_4        ( BEGIN_STAT + 20 )
+
+#define TECH_ANATOMICAL       ( BEGIN_STAT + 21 )
+#define TECH_CHEMISTRY        ( BEGIN_STAT + 22 )
+#define TECH_ELECTRICAL       ( BEGIN_STAT + 23 )
+#define TECH_EXPLOSIVES       ( BEGIN_STAT + 24 )
+#define TECH_GUNSMITH         ( BEGIN_STAT + 25 )
+#define TECH_MECHANICAL       ( BEGIN_STAT + 26 )
+#define TECH_SMITH            ( BEGIN_STAT + 27 )
+#define TECH_THERAPY          ( BEGIN_STAT + 28 )
+
+#define MAGIC_PARAM_START     ( BEGIN_STAT + 29 )
+#define MAGIC_PARAM_END       ( BEGIN_STAT + 44 )
+#define STAT_LEVEL            ( BEGIN_STAT + 45 )

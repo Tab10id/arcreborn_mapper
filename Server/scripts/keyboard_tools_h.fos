@@ -1,0 +1,95 @@
+// Author: Tab10id, cvet
+// Keybord combination tools
+
+#include "_mapper_defines.fos"
+#include "_defines.fos"
+
+interface IKeyPressUp {
+    void OnKeyPress(uint8);
+}
+interface IKeyPressDown {
+    void OnKeyPress(uint8);
+}
+interface IKeyboardCombination {
+    void OnCombo();
+}
+class CKeyboardCombination
+{
+    uint8[] SpecialKeys;
+    uint8 Key;
+    IKeyboardCombination@ CallbackComboPress;
+    CKeyboardCombination( uint8 skey1, uint8 skey2, uint8 skey3, uint8 key, IKeyboardCombination@ callback )
+    {
+        SpecialKeys.resize( 3 );
+        SpecialKeys[ 0 ] = skey1;
+        SpecialKeys[ 1 ] = skey2;
+        SpecialKeys[ 2 ] = skey3;
+        Key = key;
+        @CallbackComboPress = callback;
+    }
+}
+class CKeyPressEventHandlers
+{
+    IKeyPressUp@ CallbackPress;
+    CKeyPressEventHandlers(IKeyPressUp@ callback)
+    {
+        @CallbackPress = callback;
+    }
+}
+
+class CComboKeyPressed {
+    uint8[] SpecialKeys;
+    uint8 Key;
+    CComboKeyPressed()
+    {
+        SpecialKeys.resize( 3 );
+        SpecialKeys[ 0 ] = 0;
+        SpecialKeys[ 1 ] = 0;
+        SpecialKeys[ 2 ] = 0;
+    }
+    void ClearKeys()
+    {
+        for( uint8 i = 0; i < SpecialKeys.length(); i++ )
+        {
+            SpecialKeys[ i ] = 0;
+        }
+        Key = 0;
+    }
+    void AddSpecialKey(uint8 key)
+    {
+        for( uint8 i = 0; i < SpecialKeys.length(); i++ )
+        {
+            if( SpecialKeys[ i ] == 0 )
+            {
+                SpecialKeys[ i ] = key;
+                return;
+            }
+        }
+    }
+    void AddKey(uint8 key)
+    {
+        if( isSpecial( key ) )
+        {
+            AddSpecialKey(key);
+        }
+        else
+        {
+            if( SpecialKeys[ 0 ] != 0 ) 
+            {
+                Key = key;
+            }
+        }
+    }
+}
+
+bool isSpecial( uint8 key )
+{
+    if( ( key == DIK_LCONTROL ) or ( key == DIK_RCONTROL ) or ( key == DIK_LMENU ) or ( key == DIK_RMENU ) or ( key == DIK_LSHIFT ) or ( key == DIK_RSHIFT ) )
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}

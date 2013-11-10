@@ -1,0 +1,64 @@
+// Author: Tab10id, cvet
+// Keybord combination tools
+#include "_mapper_defines.fos"
+#include "_defines.fos"
+#include "keyboard_tools_h.fos"
+
+bool ArraysAreEqual( uint8[] array1, uint8[] array2 )
+{
+    uint8 length = array1.length();
+    if( length != array2.length() )
+    {
+        return false;
+    }
+    for( uint8 i = 0; i < length; i++ )
+    {
+        if( array1[ i ] != array2[ i ] )
+        {
+            return false;
+        }
+    }
+    return true;
+}
+
+CKeyboardCombination[] KeyboardCombinations;
+CKeyPressEventHandlers[] KeyPressEventHandlers;
+CComboKeyPressed KeyPressed;
+
+void CheckKeyboardCombo()
+{
+    for( uint i = 0; i < KeyboardCombinations.length(); i++ )
+    {
+        if( ArraysAreEqual( KeyboardCombinations[ i ].SpecialKeys, KeyPressed.SpecialKeys ) and KeyboardCombinations[ i ].Key == KeyPressed.Key )
+        {
+            KeyboardCombinations[ i ].CallbackComboPress.OnCombo();
+        }
+    }
+}
+
+void RunKeyPressEventHandlers(uint8 key)
+{
+    for( uint i = 0; i < KeyPressEventHandlers.length(); i++ )
+    {
+        KeyPressEventHandlers[i].CallbackPress.OnKeyPress(key);
+    }
+}
+
+// //////////////////////////////////////////////////////////////////////////////////////////////////
+// Keyboard behaviours. Key codes look in _mapper_defines.fos DirectInput keyboard scan codes.
+// Return true to disable engine events.
+bool key_down( uint8 key, string& keyText )
+{
+    KeyPressed.AddKey(key);
+    CheckKeyboardCombo();
+    return false;
+}
+
+bool key_up( uint8 key, string& keyText )
+{
+    KeyPressed.ClearKeys();
+    RunKeyPressEventHandlers(key);
+    return false;
+}
+
+#include "mapper_combinations.fos"

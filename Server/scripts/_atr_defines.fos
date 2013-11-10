@@ -1,0 +1,22 @@
+// Author:ZloyBabai
+
+// Рюкзаки
+#define ATR_BACKPACK_SMALL    ( 2 )
+#define ATR_BACKPACK_BIG      ( 1 )
+
+// Головные уборы
+#define ATR_TOP_HAT           ( 4 )     // Цилиндр
+#define ATR_BOWLER            ( 5 )     // Котелок
+#define ATR_CAP               ( 7 )     // Кепка
+#define ATR_COWBOY_HAT        ( 6 )     // Ковбойская шляпа, straw hat
+#define ATR_SKULL_HELMET      ( 25 )    // Шлем из черепа
+
+// Обувь
+#define ATR_CHEEP_BOOTS       ( 1 )     // Дешёвая городская обувь
+
+// Шит
+#define ATR_STD_SHIELD        ( 1 )     // Базовый шит, для тестов
+
+// Броня
+
+#define ATR_FROCK_BLACK       ( 5 )

@@ -1,0 +1,42 @@
+#ifndef __MAPS__
+#define __MAPS__
+
+// ************************************************************************/
+// * Locations                                                            */
+// ************************************************************************/
+
+
+#define LOCATION_IS_CITY             # (locPid)                  ( ( locPid ) >= LOCATION_StartLoc || ( locPid ) <= LOCATION_Glaring_coast )
+
+#define LOCATION_StartLoc            ( 1 )
+#define LOCATION_Blackberry          ( 2 )
+#define LOCATION_Bridd               ( 3 )
+#define LOCATION_Dofin               ( 4 )
+#define LOCATION_EveningDice         ( 5 )
+#define LOCATION_Freemans            ( 6 )
+#define LOCATION_Kordog              ( 7 )
+#define LOCATION_Nameret             ( 8 )
+#define LOCATION_Tedlook             ( 9 )
+#define LOCATION_Verlington          ( 10 )
+#define LOCATION_Glaring_coast       ( 11 )
+#define LOCATION_Oasispils           ( 12 )
+
+
+#define LOCATION_PilsEncounter1    ( 101 )
+#define LOCATION_PilsEncounter2    ( 102 )
+#define LOCATION_PilsEncounter3    ( 103 )
+#define LOCATION_PilsEncounter4    ( 104 )
+#define LOCATION_PilsEncounter5    ( 105 )
+
+// ************************************************************************/
+// * Maps                                                                 */
+// ************************************************************************/
+
+#define MAP_start_loc                ( 9 )
+
+
+// ************************************************************************/
+// *                                                                      */
+// ************************************************************************/
+
+#endif // __MAPS__

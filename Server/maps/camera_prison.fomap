@@ -1,0 +1,1524 @@
+[Header]
+Version              4
+MaxHexX              50
+MaxHexY              50
+WorkHexX             13
+WorkHexY             13
+ScriptModule         -
+ScriptFunc           -
+NoLogOut             0
+Time                 0
+DayTime              300  600  1140 1380
+DayColor0            18  18  53 
+DayColor1            128 128 128
+DayColor2            103 95  86 
+DayColor3            51  40  29 
+
+[Tiles]
+tile       0    0              art\tile\Std\StdBse0e.fofrm
+tile       0    0              art\tile\Blk\BlkBse0a.fofrm
+tile       1    0              art\tile\Std\StdBse0b.fofrm
+tile       1    0              art\tile\Blk\BlkBse0a.fofrm
+tile       2    0              art\tile\Std\StdBse0b.fofrm
+tile       2    0              art\tile\Blk\BlkBse0a.fofrm
+tile       3    0              art\tile\Std\StdBse0e.fofrm
+tile       3    0              art\tile\Blk\BlkBse0a.fofrm
+tile       4    0              art\tile\Std\StdBse0e.fofrm
+tile       4    0              art\tile\Blk\BlkBse0a.fofrm
+tile       5    0              art\tile\Std\StdBse0f.fofrm
+tile       5    0              art\tile\Blk\BlkBse0a.fofrm
+tile       6    0              art\tile\Std\StdBse0h.fofrm
+tile       6    0              art\tile\Blk\BlkBse0a.fofrm
+tile       7    0              art\tile\Std\StdBse0f.fofrm
+tile       7    0              art\tile\Blk\BlkBse0a.fofrm
+tile       8    0              art\tile\Std\StdBse0d.fofrm
+tile       9    0              art\tile\Std\StdBse0e.fofrm
+roof       9    0              art\tile\Blk\BlkBse0a.fofrm
+roof       9    0              art\tile\Blk\BlkBse0a.fofrm
+tile       10   0              art\tile\Std\StdBse0h.fofrm
+roof       10   0              art\tile\Blk\BlkBse0a.fofrm
+roof       10   0              art\tile\Blk\BlkBse0a.fofrm
+tile       11   0              art\tile\Std\StdBse0b.fofrm
+roof       11   0              art\tile\Blk\BlkBse0a.fofrm
+roof       11   0              art\tile\Blk\BlkBse0a.fofrm
+tile       12   0              art\tile\Std\StdBse0d.fofrm
+roof       12   0              art\tile\Blk\BlkBse0a.fofrm
+roof       12   0              art\tile\Blk\BlkBse0a.fofrm
+tile       13   0              art\tile\Std\StdBse0b.fofrm
+tile       13   0              art\tile\Blk\BlkBse0a.fofrm
+roof       13   0              art\tile\Blk\BlkBse0a.fofrm
+roof       13   0              art\tile\Blk\BlkBse0a.fofrm
+tile       14   0              art\tile\Std\StdBse0d.fofrm
+tile       14   0              art\tile\Blk\BlkBse0a.fofrm
+roof       14   0              art\tile\Blk\BlkBse0a.fofrm
+roof       14   0              art\tile\Blk\BlkBse0a.fofrm
+tile       15   0              art\tile\Std\StdBse0a.fofrm
+tile       15   0              art\tile\Blk\BlkBse0a.fofrm
+roof       15   0              art\tile\Blk\BlkBse0a.fofrm
+roof       15   0              art\tile\Blk\BlkBse0a.fofrm
+tile       16   0              art\tile\Std\StdBse0g.fofrm
+tile       17   0              art\tile\Std\StdBse0g.fofrm
+tile       18   0              art\tile\Std\StdBse0c.fofrm
+tile       19   0              art\tile\Std\StdBse0f.fofrm
+tile       20   0              art\tile\Std\StdBse0g.fofrm
+tile       21   0              art\tile\Std\StdBse0c.fofrm
+tile       22   0              art\tile\Std\StdBse0b.fofrm
+tile       23   0              art\tile\Std\StdBse0h.fofrm
+tile       24   0              art\tile\Std\StdBse0e.fofrm
+tile       25   0              art\tile\Std\StdBse0a.fofrm
+tile       26   0              art\tile\Std\StdBse0e.fofrm
+tile       27   0              art\tile\Std\StdBse0h.fofrm
+tile       28   0              art\tile\Std\StdBse0f.fofrm
+tile       29   0              art\tile\Std\StdBse0a.fofrm
+tile       0    1              art\tile\Std\StdBse0g.fofrm
+tile       0    1              art\tile\Blk\BlkBse0a.fofrm
+tile       1    1              art\tile\Std\StdBse0b.fofrm
+tile       1    1              art\tile\Blk\BlkBse0a.fofrm
+tile       2    1              art\tile\Std\StdBse0c.fofrm
+tile       2    1              art\tile\Blk\BlkBse0a.fofrm
+tile       3    1              art\tile\Std\StdBse0f.fofrm
+tile       3    1              art\tile\Blk\BlkBse0a.fofrm
+tile       4    1              art\tile\Std\StdBse0f.fofrm
+tile       4    1              art\tile\Blk\BlkBse0a.fofrm
+tile       5    1              art\tile\Std\StdBse0a.fofrm
+tile       5    1              art\tile\Blk\BlkBse0a.fofrm
+tile       6    1              art\tile\Std\StdBse0c.fofrm
+tile       6    1              art\tile\Blk\BlkBse0a.fofrm
+tile       7    1              art\tile\Std\StdBse0h.fofrm
+tile       7    1              art\tile\Blk\BlkBse0a.fofrm
+tile       7    1              art\tile\Blk\BlkBse0a.fofrm
+tile       8    1              art\tile\Std\StdBse0g.fofrm
+roof       8    1              art\tile\Blk\BlkBse0a.fofrm
+roof       8    1              art\tile\Blk\BlkBse0a.fofrm
+tile       9    1              art\tile\Std\StdBse0f.fofrm
+roof       9    1              art\tile\Blk\BlkBse0a.fofrm
+roof       9    1              art\tile\Blk\BlkBse0a.fofrm
+roof       9    1              art\tile\Blk\BlkBse0a.fofrm
+roof       9    1              art\tile\Blk\BlkBse0a.fofrm
+tile       10   1              art\tile\Std\StdBse0f.fofrm
+roof       10   1              art\tile\Blk\BlkBse0a.fofrm
+roof       10   1              art\tile\Blk\BlkBse0a.fofrm
+tile       11   1              art\tile\Std\StdBse0g.fofrm
+roof       11   1              art\tile\Blk\BlkBse0a.fofrm
+roof       11   1              art\tile\Blk\BlkBse0a.fofrm
+tile       12   1              art\tile\Std\StdBse0d.fofrm
+roof       12   1              art\tile\Blk\BlkBse0a.fofrm
+roof       12   1              art\tile\Blk\BlkBse0a.fofrm
+roof       12   1              art\tile\Blk\BlkBse0a.fofrm
+tile       13   1              art\tile\Std\StdBse0b.fofrm
+roof       13   1              art\tile\Blk\BlkBse0a.fofrm
+roof       13   1              art\tile\Blk\BlkBse0a.fofrm
+tile       14   1              art\tile\Std\StdBse0h.fofrm
+tile       14   1              art\tile\Blk\BlkBse0a.fofrm
+tile       14   1              art\tile\Blk\BlkBse0a.fofrm
+tile       14   1              art\tile\Blk\BlkBse0a.fofrm
+roof       14   1              art\tile\Blk\BlkBse0a.fofrm
+roof       14   1              art\tile\Blk\BlkBse0a.fofrm
+tile       15   1              art\tile\Std\StdBse0f.fofrm
+tile       15   1              art\tile\Blk\BlkBse0a.fofrm
+roof       15   1              art\tile\Blk\BlkBse0a.fofrm
+roof       15   1              art\tile\Blk\BlkBse0a.fofrm
+tile       16   1              art\tile\Std\StdBse0g.fofrm
+tile       17   1              art\tile\Std\StdBse0d.fofrm
+tile       18   1              art\tile\Std\StdBse0c.fofrm
+tile       19   1              art\tile\Std\StdBse0g.fofrm
+tile       20   1              art\tile\Std\StdBse0d.fofrm
+tile       21   1              art\tile\Std\StdBse0a.fofrm
+tile       22   1              art\tile\Std\StdBse0h.fofrm
+tile       23   1              art\tile\Std\StdBse0a.fofrm
+tile       24   1              art\tile\Std\StdBse0f.fofrm
+tile       25   1              art\tile\Std\StdBse0c.fofrm
+tile       26   1              art\tile\Std\StdBse0d.fofrm
+tile       27   1              art\tile\Std\StdBse0a.fofrm
+tile       28   1              art\tile\Std\StdBse0e.fofrm
+tile       29   1              art\tile\Std\StdBse0h.fofrm
+tile       0    2              art\tile\Std\StdBse0g.fofrm
+tile       0    2              art\tile\Blk\BlkBse0a.fofrm
+tile       1    2              art\tile\Std\StdBse0a.fofrm
+tile       1    2              art\tile\Blk\BlkBse0a.fofrm
+tile       2    2              art\tile\Std\StdBse0f.fofrm
+tile       2    2              art\tile\Blk\BlkBse0a.fofrm
+tile       3    2              art\tile\Std\StdBse0d.fofrm
+tile       3    2              art\tile\Blk\BlkBse0a.fofrm
+tile       4    2              art\tile\Std\StdBse0b.fofrm
+tile       4    2              art\tile\Blk\BlkBse0a.fofrm
+tile       5    2              art\tile\Std\StdBse0h.fofrm
+tile       5    2              art\tile\Blk\BlkBse0a.fofrm
+tile       6    2              art\tile\Std\StdBse0g.fofrm
+tile       6    2              art\tile\Blk\BlkBse0a.fofrm
+tile       7    2              art\tile\Std\StdBse0c.fofrm
+tile       8    2              art\tile\Std\StdBse0g.fofrm
+tile       9    2              art\tile\Std\StdBse0d.fofrm
+roof       9    2              art\tile\Blk\BlkBse0a.fofrm
+roof       9    2              art\tile\Blk\BlkBse0a.fofrm
+roof       9    2              art\tile\Blk\BlkBse0a.fofrm
+tile       10   2              art\tile\Std\StdBse0g.fofrm
+roof       10   2              art\tile\Blk\BlkBse0a.fofrm
+roof       10   2              art\tile\Blk\BlkBse0a.fofrm
+roof       10   2              art\tile\Blk\BlkBse0a.fofrm
+roof       10   2              art\tile\Blk\BlkBse0a.fofrm
+tile       11   2              art\tile\Std\StdBse0c.fofrm
+roof       11   2              art\tile\Blk\BlkBse0a.fofrm
+roof       11   2              art\tile\Blk\BlkBse0a.fofrm
+roof       11   2              art\tile\Blk\BlkBse0a.fofrm
+roof       11   2              art\tile\Blk\BlkBse0a.fofrm
+roof       11   2              art\tile\Blk\BlkBse0a.fofrm
+roof       11   2              art\tile\Blk\BlkBse0a.fofrm
+tile       12   2              art\tile\Std\StdBse0c.fofrm
+roof       12   2              art\tile\Blk\BlkBse0a.fofrm
+roof       12   2              art\tile\Blk\BlkBse0a.fofrm
+roof       12   2              art\tile\Blk\BlkBse0a.fofrm
+roof       12   2              art\tile\Blk\BlkBse0a.fofrm
+roof       12   2              art\tile\Blk\BlkBse0a.fofrm
+roof       12   2              art\tile\Blk\BlkBse0a.fofrm
+tile       13   2              art\tile\Std\StdBse0d.fofrm
+roof       13   2              art\tile\Blk\BlkBse0a.fofrm
+roof       13   2              art\tile\Blk\BlkBse0a.fofrm
+roof       13   2              art\tile\Blk\BlkBse0a.fofrm
+roof       13   2              art\tile\Blk\BlkBse0a.fofrm
+roof       13   2              art\tile\Blk\BlkBse0a.fofrm
+tile       14   2              art\tile\Std\StdBse0d.fofrm
+roof       14   2              art\tile\Blk\BlkBse0a.fofrm
+roof       14   2              art\tile\Blk\BlkBse0a.fofrm
+tile       15   2              art\tile\Std\StdBse0g.fofrm
+roof       15   2              art\tile\Blk\BlkBse0a.fofrm
+roof       15   2              art\tile\Blk\BlkBse0a.fofrm
+tile       16   2              art\tile\Std\StdBse0a.fofrm
+tile       16   2              art\tile\Blk\BlkBse0a.fofrm
+tile       17   2              art\tile\Std\StdBse0d.fofrm
+tile       18   2              art\tile\Std\StdBse0b.fofrm
+tile       19   2              art\tile\Std\StdBse0c.fofrm
+tile       20   2              art\tile\Std\StdBse0h.fofrm
+tile       21   2              art\tile\Std\StdBse0f.fofrm
+tile       22   2              art\tile\Std\StdBse0b.fofrm
+tile       23   2              art\tile\Std\StdBse0c.fofrm
+tile       24   2              art\tile\Std\StdBse0c.fofrm
+tile       25   2              art\tile\Std\StdBse0b.fofrm
+tile       26   2              art\tile\Std\StdBse0f.fofrm
+tile       27   2              art\tile\Std\StdBse0b.fofrm
+tile       28   2              art\tile\Std\StdBse0e.fofrm
+tile       29   2              art\tile\Std\StdBse0e.fofrm
+tile       0    3              art\tile\Std\StdBse0g.fofrm
+tile       0    3              art\tile\Blk\BlkBse0a.fofrm
+tile       1    3              art\tile\Std\StdBse0c.fofrm
+tile       1    3              art\tile\Blk\BlkBse0a.fofrm
+tile       2    3              art\tile\Std\StdBse0f.fofrm
+tile       2    3              art\tile\Blk\BlkBse0a.fofrm
+tile       3    3              art\tile\Std\StdBse0g.fofrm
+tile       3    3              art\tile\Blk\BlkBse0a.fofrm
+tile       4    3              art\tile\Std\StdBse0h.fofrm
+tile       4    3              art\tile\Blk\BlkBse0a.fofrm
+tile       5    3              art\tile\Std\StdBse0b.fofrm
+tile       5    3              art\tile\Blk\BlkBse0a.fofrm
+tile       6    3              art\tile\Std\StdBse0d.fofrm
+tile       7    3              art\tile\Std\StdBse0e.fofrm
+tile       8    3              art\tile\Std\StdBse0h.fofrm
+tile       9    3              art\tile\Std\StdBse0e.fofrm
+tile       10   3              art\tile\Std\StdBse0c.fofrm
+roof       10   3              art\tile\Blk\BlkBse0a.fofrm
+roof       10   3              art\tile\Blk\BlkBse0a.fofrm
+roof       10   3              art\tile\Blk\BlkBse0a.fofrm
+roof       10   3              art\tile\Blk\BlkBse0a.fofrm
+tile       11   3              art\tile\Std\StdBse0h.fofrm
+roof       11   3              art\tile\Blk\BlkBse0a.fofrm
+roof       11   3              art\tile\Blk\BlkBse0a.fofrm
+roof       11   3              art\tile\Blk\BlkBse0a.fofrm
+roof       11   3              art\tile\Blk\BlkBse0a.fofrm
+tile       12   3              art\tile\Std\StdBse0c.fofrm
+roof       12   3              art\tile\Blk\BlkBse0a.fofrm
+roof       12   3              art\tile\Blk\BlkBse0a.fofrm
+roof       12   3              art\tile\Blk\BlkBse0a.fofrm
+roof       12   3              art\tile\Blk\BlkBse0a.fofrm
+roof       12   3              art\tile\Blk\BlkBse0a.fofrm
+tile       13   3              art\tile\Std\StdBse0d.fofrm
+roof       13   3              art\tile\Blk\BlkBse0a.fofrm
+roof       13   3              art\tile\Blk\BlkBse0a.fofrm
+roof       13   3              art\tile\Blk\BlkBse0a.fofrm
+roof       13   3              art\tile\Blk\BlkBse0a.fofrm
+roof       13   3              art\tile\Blk\BlkBse0a.fofrm
+roof       13   3              art\tile\Blk\BlkBse0a.fofrm
+tile       14   3              art\tile\Std\StdBse0h.fofrm
+roof       14   3              art\tile\Blk\BlkBse0a.fofrm
+roof       14   3              art\tile\Blk\BlkBse0a.fofrm
+roof       14   3              art\tile\Blk\BlkBse0a.fofrm
+roof       14   3              art\tile\Blk\BlkBse0a.fofrm
+roof       14   3              art\tile\Blk\BlkBse0a.fofrm
+tile       15   3              art\tile\Std\StdBse0d.fofrm
+roof       15   3              art\tile\Blk\BlkBse0a.fofrm
+roof       15   3              art\tile\Blk\BlkBse0a.fofrm
+tile       16   3              art\tile\Std\StdBse0e.fofrm
+roof       16   3              art\tile\Blk\BlkBse0a.fofrm
+roof       16   3              art\tile\Blk\BlkBse0a.fofrm
+tile       17   3              art\tile\Std\StdBse0h.fofrm
+tile       17   3              art\tile\Blk\BlkBse0a.fofrm
+tile       17   3              art\tile\Blk\BlkBse0a.fofrm
+tile       18   3              art\tile\Std\StdBse0d.fofrm
+tile       19   3              art\tile\Std\StdBse0e.fofrm
+tile       20   3              art\tile\Std\StdBse0h.fofrm
+tile       21   3              art\tile\Std\StdBse0b.fofrm
+tile       22   3              art\tile\Std\StdBse0h.fofrm
+tile       23   3              art\tile\Std\StdBse0b.fofrm
+tile       24   3              art\tile\Std\StdBse0b.fofrm
+tile       25   3              art\tile\Std\StdBse0d.fofrm
+tile       26   3              art\tile\Std\StdBse0d.fofrm
+tile       27   3              art\tile\Std\StdBse0g.fofrm
+tile       28   3              art\tile\Std\StdBse0c.fofrm
+tile       29   3              art\tile\Std\StdBse0b.fofrm
+tile       0    4              art\tile\Std\StdBse0f.fofrm
+tile       0    4              art\tile\Blk\BlkBse0a.fofrm
+tile       1    4              art\tile\Std\StdBse0e.fofrm
+tile       1    4              art\tile\Blk\BlkBse0a.fofrm
+tile       2    4              art\tile\Std\StdBse0e.fofrm
+tile       2    4              art\tile\Blk\BlkBse0a.fofrm
+tile       3    4              art\tile\Std\StdBse0e.fofrm
+tile       3    4              art\tile\Blk\BlkBse0a.fofrm
+tile       4    4              art\tile\Std\StdBse0f.fofrm
+tile       4    4              art\tile\Blk\BlkBse0a.fofrm
+tile       5    4              art\tile\Std\StdBse0h.fofrm
+tile       5    4              art\tile\Blk\BlkBse0a.fofrm
+tile       6    4              art\tile\Std\StdBse0b.fofrm
+tile       7    4              art\tile\Std\StdBse0b.fofrm
+tile       8    4              art\tile\Std\StdBse0e.fofrm
+tile       9    4              art\tile\Std\StdBse0b.fofrm
+roof       9    4              art\tile\Blk\BlkBse0a.fofrm
+roof       9    4              art\tile\Blk\BlkBse0a.fofrm
+tile       10   4              art\tile\Std\StdBse0d.fofrm
+roof       10   4              art\tile\Blk\BlkBse0a.fofrm
+roof       10   4              art\tile\Blk\BlkBse0a.fofrm
+roof       10   4              art\tile\Blk\BlkBse0a.fofrm
+tile       11   4              art\tile\Std\StdBse0f.fofrm
+roof       11   4              art\tile\Blk\BlkBse0a.fofrm
+roof       11   4              art\tile\Blk\BlkBse0a.fofrm
+roof       11   4              art\tile\Blk\BlkBse0a.fofrm
+tile       12   4              art\tile\Std\StdBse0h.fofrm
+roof       12   4              art\tile\Blk\BlkBse0a.fofrm
+roof       12   4              art\tile\Blk\BlkBse0a.fofrm
+roof       12   4              art\tile\Blk\BlkBse0a.fofrm
+roof       12   4              art\tile\Blk\BlkBse0a.fofrm
+tile       13   4              art\tile\Std\StdBse0c.fofrm
+roof       13   4              art\tile\Blk\BlkBse0a.fofrm
+roof       13   4              art\tile\Blk\BlkBse0a.fofrm
+roof       13   4              art\tile\Blk\BlkBse0a.fofrm
+roof       13   4              art\tile\Blk\BlkBse0a.fofrm
+roof       13   4              art\tile\Blk\BlkBse0a.fofrm
+tile       14   4              art\tile\Std\StdBse0e.fofrm
+roof       14   4              art\tile\Blk\BlkBse0a.fofrm
+roof       14   4              art\tile\Blk\BlkBse0a.fofrm
+tile       15   4              art\tile\Std\StdBse0f.fofrm
+roof       15   4              art\tile\Blk\BlkBse0a.fofrm
+roof       15   4              art\tile\Blk\BlkBse0a.fofrm
+tile       16   4              art\tile\Std\StdBse0f.fofrm
+roof       16   4              art\tile\Blk\BlkBse0a.fofrm
+roof       16   4              art\tile\Blk\BlkBse0a.fofrm
+tile       17   4              art\tile\Std\StdBse0h.fofrm
+roof       17   4              art\tile\Blk\BlkBse0a.fofrm
+roof       17   4              art\tile\Blk\BlkBse0a.fofrm
+tile       18   4              art\tile\Std\StdBse0b.fofrm
+tile       19   4              art\tile\Std\StdBse0c.fofrm
+tile       20   4              art\tile\Std\StdBse0b.fofrm
+tile       21   4              art\tile\Std\StdBse0h.fofrm
+tile       22   4              art\tile\Std\StdBse0c.fofrm
+tile       23   4              art\tile\Std\StdBse0b.fofrm
+tile       24   4              art\tile\Std\StdBse0b.fofrm
+tile       25   4              art\tile\Std\StdBse0g.fofrm
+tile       26   4              art\tile\Std\StdBse0b.fofrm
+tile       27   4              art\tile\Std\StdBse0a.fofrm
+tile       28   4              art\tile\Std\StdBse0h.fofrm
+tile       29   4              art\tile\Std\StdBse0a.fofrm
+tile       0    5              art\tile\Std\StdBse0f.fofrm
+tile       0    5              art\tile\Blk\BlkBse0a.fofrm
+tile       1    5              art\tile\Std\StdBse0e.fofrm
+tile       1    5              art\tile\Blk\BlkBse0a.fofrm
+tile       2    5              art\tile\Std\StdBse0e.fofrm
+tile       2    5              art\tile\Blk\BlkBse0a.fofrm
+tile       3    5              art\tile\Std\StdBse0d.fofrm
+tile       3    5              art\tile\Blk\BlkBse0a.fofrm
+tile       4    5              art\tile\Std\StdBse0h.fofrm
+tile       5    5              art\tile\Std\StdBse0b.fofrm
+tile       6    5              art\tile\Std\StdBse0a.fofrm
+tile       7    5              art\tile\Std\StdBse0g.fofrm
+tile       8    5              art\tile\Std\StdBse0h.fofrm
+roof       8    5              art\tile\Blk\BlkBse0a.fofrm
+roof       8    5              art\tile\Blk\BlkBse0a.fofrm
+tile       9    5              art\tile\Std\StdBse0b.fofrm
+roof       9    5              art\tile\Blk\BlkBse0a.fofrm
+roof       9    5              art\tile\Blk\BlkBse0a.fofrm
+tile       10   5              art\tile\Std\StdBse0h.fofrm
+roof       10   5              art\tile\Blk\BlkBse0a.fofrm
+roof       10   5              art\tile\Blk\BlkBse0a.fofrm
+tile       11   5              art\tile\Std\StdBse0a.fofrm
+roof       11   5              art\tile\Blk\BlkBse0a.fofrm
+roof       11   5              art\tile\Blk\BlkBse0a.fofrm
+roof       11   5              art\tile\Blk\BlkBse0a.fofrm
+roof       11   5              art\tile\Blk\BlkBse0a.fofrm
+tile       12   5              art\tile\Std\StdBse0f.fofrm
+roof       12   5              art\tile\Blk\BlkBse0a.fofrm
+roof       12   5              art\tile\Blk\BlkBse0a.fofrm
+tile       13   5              art\tile\Std\StdBse0a.fofrm
+roof       13   5              art\tile\Blk\BlkBse0a.fofrm
+roof       13   5              art\tile\Blk\BlkBse0a.fofrm
+tile       14   5              art\tile\Std\StdBse0f.fofrm
+roof       14   5              art\tile\Blk\BlkBse0a.fofrm
+roof       14   5              art\tile\Blk\BlkBse0a.fofrm
+tile       15   5              art\tile\Std\StdBse0f.fofrm
+roof       15   5              art\tile\Blk\BlkBse0a.fofrm
+roof       15   5              art\tile\Blk\BlkBse0a.fofrm
+tile       16   5              art\tile\Std\StdBse0a.fofrm
+roof       16   5              art\tile\Blk\BlkBse0a.fofrm
+roof       16   5              art\tile\Blk\BlkBse0a.fofrm
+tile       17   5              art\tile\Std\StdBse0h.fofrm
+roof       17   5              art\tile\Blk\BlkBse0a.fofrm
+roof       17   5              art\tile\Blk\BlkBse0a.fofrm
+tile       18   5              art\tile\Std\StdBse0b.fofrm
+roof       18   5              art\tile\Blk\BlkBse0a.fofrm
+roof       18   5              art\tile\Blk\BlkBse0a.fofrm
+tile       19   5              art\tile\Std\StdBse0e.fofrm
+tile       20   5              art\tile\Std\StdBse0d.fofrm
+tile       21   5              art\tile\Std\StdBse0f.fofrm
+tile       22   5              art\tile\Std\StdBse0b.fofrm
+tile       23   5              art\tile\Std\StdBse0c.fofrm
+tile       24   5              art\tile\Std\StdBse0d.fofrm
+tile       25   5              art\tile\Std\StdBse0f.fofrm
+tile       26   5              art\tile\Std\StdBse0a.fofrm
+tile       27   5              art\tile\Std\StdBse0e.fofrm
+tile       28   5              art\tile\Std\StdBse0b.fofrm
+tile       29   5              art\tile\Std\StdBse0g.fofrm
+tile       0    6              art\tile\Std\StdBse0f.fofrm
+tile       0    6              art\tile\Blk\BlkBse0a.fofrm
+tile       1    6              art\tile\Std\StdBse0f.fofrm
+tile       2    6              art\tile\Std\StdBse0f.fofrm
+tile       3    6              art\tile\Std\StdBse0g.fofrm
+tile       4    6              art\tile\Std\StdBse0a.fofrm
+tile       5    6              art\tile\Std\StdBse0a.fofrm
+tile       6    6              art\tile\Std\StdBse0g.fofrm
+tile       6    6              art\tile\Blk\BlkBse0a.fofrm
+roof       6    6              art\tile\Blk\BlkBse0a.fofrm
+tile       7    6              art\tile\Std\StdBse0e.fofrm
+roof       7    6              art\tile\Blk\BlkBse0a.fofrm
+tile       8    6              art\tile\Std\StdBse0c.fofrm
+roof       8    6              art\tile\Blk\BlkBse0a.fofrm
+roof       8    6              art\tile\Blk\BlkBse0a.fofrm
+tile       9    6              art\tile\Std\StdBse0d.fofrm
+roof       9    6              art\tile\Blk\BlkBse0a.fofrm
+roof       9    6              art\tile\Blk\BlkBse0a.fofrm
+tile       10   6              art\tile\Std\StdBse0f.fofrm
+roof       10   6              art\tile\Blk\BlkBse0a.fofrm
+roof       10   6              art\tile\Blk\BlkBse0a.fofrm
+roof       10   6              art\tile\Blk\BlkBse0a.fofrm
+roof       10   6              art\tile\Blk\BlkBse0a.fofrm
+tile       11   6              art\tile\Std\StdBse0g.fofrm
+roof       11   6              art\tile\Blk\BlkBse0a.fofrm
+roof       11   6              art\tile\Blk\BlkBse0a.fofrm
+tile       12   6              art\tile\Std\StdBse0b.fofrm
+roof       12   6              art\tile\Blk\BlkBse0a.fofrm
+roof       12   6              art\tile\Blk\BlkBse0a.fofrm
+tile       13   6              art\tile\Std\StdBse0h.fofrm
+roof       13   6              art\tile\Blk\BlkBse0a.fofrm
+roof       13   6              art\tile\Blk\BlkBse0a.fofrm
+tile       14   6              art\tile\Std\StdBse0a.fofrm
+roof       14   6              art\tile\Blk\BlkBse0a.fofrm
+roof       14   6              art\tile\Blk\BlkBse0a.fofrm
+tile       15   6              art\tile\Std\StdBse0g.fofrm
+roof       15   6              art\tile\Blk\BlkBse0a.fofrm
+roof       15   6              art\tile\Blk\BlkBse0a.fofrm
+tile       16   6              art\tile\Std\StdBse0g.fofrm
+roof       16   6              art\tile\Blk\BlkBse0a.fofrm
+roof       16   6              art\tile\Blk\BlkBse0a.fofrm
+tile       17   6              art\tile\Std\StdBse0d.fofrm
+roof       17   6              art\tile\Blk\BlkBse0a.fofrm
+roof       17   6              art\tile\Blk\BlkBse0a.fofrm
+tile       18   6              art\tile\Std\StdBse0g.fofrm
+roof       18   6              art\tile\Blk\BlkBse0a.fofrm
+roof       18   6              art\tile\Blk\BlkBse0a.fofrm
+tile       19   6              art\tile\Std\StdBse0f.fofrm
+roof       19   6              art\tile\Blk\BlkBse0a.fofrm
+roof       19   6              art\tile\Blk\BlkBse0a.fofrm
+tile       20   6              art\tile\Std\StdBse0d.fofrm
+tile       21   6              art\tile\Std\StdBse0d.fofrm
+tile       22   6              art\tile\Std\StdBse0b.fofrm
+tile       23   6              art\tile\Std\StdBse0d.fofrm
+tile       24   6              art\tile\Std\StdBse0c.fofrm
+tile       25   6              art\tile\Std\StdBse0c.fofrm
+tile       26   6              art\tile\Std\StdBse0a.fofrm
+tile       27   6              art\tile\Std\StdBse0c.fofrm
+tile       28   6              art\tile\Std\StdBse0g.fofrm
+tile       29   6              art\tile\Std\StdBse0e.fofrm
+tile       0    7              art\tile\Std\StdBse0e.fofrm
+tile       0    7              art\tile\Blk\BlkBse0a.fofrm
+tile       1    7              art\tile\Std\StdBse0d.fofrm
+tile       2    7              art\tile\Std\StdBse0c.fofrm
+tile       3    7              art\tile\Std\StdBse0f.fofrm
+tile       4    7              art\tile\Std\StdBse0f.fofrm
+tile       5    7              art\tile\Std\StdBse0h.fofrm
+roof       5    7              art\tile\Blk\BlkBse0a.fofrm
+tile       6    7              art\tile\Std\StdBse0a.fofrm
+roof       6    7              art\tile\Blk\BlkBse0a.fofrm
+roof       6    7              art\tile\Blk\BlkBse0a.fofrm
+tile       7    7              art\tile\Std\StdBse0h.fofrm
+roof       7    7              art\tile\Blk\BlkBse0a.fofrm
+roof       7    7              art\tile\Blk\BlkBse0a.fofrm
+tile       8    7              art\tile\Std\StdBse0h.fofrm
+roof       8    7              art\tile\Blk\BlkBse0a.fofrm
+roof       8    7              art\tile\Blk\BlkBse0a.fofrm
+tile       9    7              art\tile\Std\StdBse0h.fofrm
+roof       9    7              art\tile\Blk\BlkBse0a.fofrm
+roof       9    7              art\tile\Blk\BlkBse0a.fofrm
+roof       9    7              art\tile\Blk\BlkBse0a.fofrm
+roof       9    7              art\tile\Blk\BlkBse0a.fofrm
+tile       10   7              art\tile\Std\StdBse0g.fofrm
+roof       10   7              art\tile\Blk\BlkBse0a.fofrm
+roof       10   7              art\tile\Blk\BlkBse0a.fofrm
+tile       11   7              art\tile\Std\StdBse0a.fofrm
+roof       11   7              art\tile\Blk\BlkBse0a.fofrm
+roof       11   7              art\tile\Blk\BlkBse0a.fofrm
+tile       12   7              art\tile\Std\StdBse0h.fofrm
+roof       12   7              art\tile\Blk\BlkBse0a.fofrm
+roof       12   7              art\tile\Blk\BlkBse0a.fofrm
+tile       13   7              art\tile\Std\StdBse0h.fofrm
+roof       13   7              art\tile\Blk\BlkBse0a.fofrm
+roof       13   7              art\tile\Blk\BlkBse0a.fofrm
+tile       14   7              art\tile\Std\StdBse0b.fofrm
+roof       14   7              art\tile\Blk\BlkBse0a.fofrm
+roof       14   7              art\tile\Blk\BlkBse0a.fofrm
+tile       15   7              art\tile\Std\StdBse0a.fofrm
+roof       15   7              art\tile\Blk\BlkBse0a.fofrm
+roof       15   7              art\tile\Blk\BlkBse0a.fofrm
+tile       16   7              art\tile\Std\StdBse0c.fofrm
+roof       16   7              art\tile\Blk\BlkBse0a.fofrm
+roof       16   7              art\tile\Blk\BlkBse0a.fofrm
+tile       17   7              art\tile\Std\StdBse0b.fofrm
+roof       17   7              art\tile\Blk\BlkBse0a.fofrm
+roof       17   7              art\tile\Blk\BlkBse0a.fofrm
+tile       18   7              art\tile\Std\StdBse0b.fofrm
+roof       18   7              art\tile\Blk\BlkBse0a.fofrm
+roof       18   7              art\tile\Blk\BlkBse0a.fofrm
+tile       19   7              art\tile\Std\StdBse0a.fofrm
+roof       19   7              art\tile\Blk\BlkBse0a.fofrm
+roof       19   7              art\tile\Blk\BlkBse0a.fofrm
+tile       20   7              art\tile\Std\StdBse0f.fofrm
+roof       20   7              art\tile\Blk\BlkBse0a.fofrm
+roof       20   7              art\tile\Blk\BlkBse0a.fofrm
+tile       21   7              art\tile\Std\StdBse0g.fofrm
+tile       22   7              art\tile\Std\StdBse0d.fofrm
+tile       23   7              art\tile\Std\StdBse0d.fofrm
+tile       24   7              art\tile\Std\StdBse0f.fofrm
+tile       25   7              art\tile\Std\StdBse0b.fofrm
+tile       26   7              art\tile\Std\StdBse0e.fofrm
+tile       27   7              art\tile\Std\StdBse0h.fofrm
+tile       28   7              art\tile\Std\StdBse0g.fofrm
+tile       29   7              art\tile\Std\StdBse0h.fofrm
+tile       0    8              art\tile\Std\StdBse0e.fofrm
+tile       0    8              art\tile\Blk\BlkBse0a.fofrm
+tile       1    8              art\tile\Std\StdBse0e.fofrm
+tile       2    8              art\tile\Std\StdBse0b.fofrm
+roof       2    8              art\tile\Blk\BlkBse0a.fofrm
+tile       3    8              art\tile\Std\StdBse0e.fofrm
+roof       3    8              art\tile\Blk\BlkBse0a.fofrm
+roof       3    8              art\tile\Blk\BlkBse0a.fofrm
+tile       4    8              art\tile\Std\StdBse0c.fofrm
+roof       4    8              art\tile\Blk\BlkBse0a.fofrm
+roof       4    8              art\tile\Blk\BlkBse0a.fofrm
+tile       5    8              art\tile\Std\StdBse0h.fofrm
+roof       5    8              art\tile\Blk\BlkBse0a.fofrm
+roof       5    8              art\tile\Blk\BlkBse0a.fofrm
+tile       6    8              art\tile\Std\StdBse0e.fofrm
+roof       6    8              art\tile\Blk\BlkBse0a.fofrm
+roof       6    8              art\tile\Blk\BlkBse0a.fofrm
+tile       7    8              art\tile\Std\StdBse0b.fofrm
+roof       7    8              art\tile\Blk\BlkBse0a.fofrm
+roof       7    8              art\tile\Blk\BlkBse0a.fofrm
+tile       8    8              art\tile\Std\StdBse0f.fofrm
+roof       8    8              art\tile\Blk\BlkBse0a.fofrm
+roof       8    8              art\tile\Blk\BlkBse0a.fofrm
+tile       9    8              art\tile\Std\StdBse0d.fofrm
+tile       10   8              art\tile\Std\StdBse0f.fofrm
+tile       11   8              art\tile\Std\StdBse0d.fofrm
+tile       12   8              art\tile\Std\StdBse0h.fofrm
+tile       13   8              art\tile\Std\StdBse0f.fofrm
+tile       14   8              art\tile\Std\StdBse0g.fofrm
+tile       15   8              art\tile\Std\StdBse0e.fofrm
+tile       16   8              art\tile\Std\StdBse0b.fofrm
+tile       17   8              art\tile\Std\StdBse0f.fofrm
+tile       18   8              art\tile\Std\StdBse0c.fofrm
+tile       19   8              art\tile\Std\StdBse0g.fofrm
+tile       20   8              art\tile\Std\StdBse0g.fofrm
+tile       21   8              art\tile\Std\StdBse0f.fofrm
+tile       22   8              art\tile\Std\StdBse0b.fofrm
+tile       23   8              art\tile\Std\StdBse0d.fofrm
+tile       24   8              art\tile\Std\StdBse0a.fofrm
+tile       25   8              art\tile\Std\StdBse0d.fofrm
+tile       26   8              art\tile\Std\StdBse0d.fofrm
+tile       27   8              art\tile\Std\StdBse0f.fofrm
+tile       28   8              art\tile\Std\StdBse0c.fofrm
+tile       29   8              art\tile\Std\StdBse0d.fofrm
+tile       0    9              art\tile\Std\StdBse0d.fofrm
+tile       1    9              art\tile\Std\StdBse0e.fofrm
+tile       2    9              art\tile\Std\StdBse0e.fofrm
+roof       2    9              art\tile\Blk\BlkBse0a.fofrm
+tile       3    9              art\tile\Std\StdBse0f.fofrm
+roof       3    9              art\tile\Blk\BlkBse0a.fofrm
+roof       3    9              art\tile\Blk\BlkBse0a.fofrm
+tile       4    9              art\tile\Std\StdBse0b.fofrm
+roof       4    9              art\tile\Blk\BlkBse0a.fofrm
+roof       4    9              art\tile\Blk\BlkBse0a.fofrm
+tile       5    9              art\tile\Std\StdBse0f.fofrm
+roof       5    9              art\tile\Blk\BlkBse0a.fofrm
+roof       5    9              art\tile\Blk\BlkBse0a.fofrm
+tile       6    9              art\tile\Std\StdBse0d.fofrm
+roof       6    9              art\tile\Blk\BlkBse0a.fofrm
+roof       6    9              art\tile\Blk\BlkBse0a.fofrm
+tile       7    9              art\tile\Std\StdBse0e.fofrm
+roof       7    9              art\tile\Blk\BlkBse0a.fofrm
+roof       7    9              art\tile\Blk\BlkBse0a.fofrm
+tile       8    9              art\tile\Std\StdBse0c.fofrm
+roof       8    9              art\tile\Blk\BlkBse0a.fofrm
+roof       8    9              art\tile\Blk\BlkBse0a.fofrm
+tile       9    9              art\tile\Std\StdBse0c.fofrm
+tile       10   9              art\tile\Std\StdBse0a.fofrm
+tile       11   9              art\tile\Std\StdBse0h.fofrm
+tile       12   9              art\tile\Std\StdBse0e.fofrm
+tile       13   9              art\tile\Std\StdBse0c.fofrm
+tile       14   9              art\tile\Std\StdBse0e.fofrm
+tile       15   9              art\tile\Std\StdBse0b.fofrm
+tile       16   9              art\tile\Std\StdBse0c.fofrm
+tile       17   9              art\tile\Std\StdBse0h.fofrm
+tile       18   9              art\tile\Std\StdBse0h.fofrm
+tile       19   9              art\tile\Std\StdBse0g.fofrm
+tile       20   9              art\tile\Std\StdBse0h.fofrm
+tile       21   9              art\tile\Std\StdBse0d.fofrm
+tile       22   9              art\tile\Std\StdBse0b.fofrm
+tile       23   9              art\tile\Std\StdBse0g.fofrm
+tile       24   9              art\tile\Std\StdBse0a.fofrm
+tile       25   9              art\tile\Std\StdBse0d.fofrm
+tile       26   9              art\tile\Std\StdBse0a.fofrm
+tile       27   9              art\tile\Std\StdBse0h.fofrm
+tile       28   9              art\tile\Std\StdBse0b.fofrm
+tile       29   9              art\tile\Std\StdBse0c.fofrm
+tile       0    10             art\tile\Std\StdBse0h.fofrm
+tile       1    10             art\tile\Std\StdBse0f.fofrm
+tile       2    10             art\tile\Std\StdBse0d.fofrm
+roof       2    10             art\tile\Blk\BlkBse0a.fofrm
+tile       3    10             art\tile\Std\StdBse0h.fofrm
+roof       3    10             art\tile\Blk\BlkBse0a.fofrm
+roof       3    10             art\tile\Blk\BlkBse0a.fofrm
+tile       4    10             art\tile\Std\StdBse0h.fofrm
+roof       4    10             art\tile\Blk\BlkBse0a.fofrm
+roof       4    10             art\tile\Blk\BlkBse0a.fofrm
+tile       5    10             art\tile\Std\StdBse0e.fofrm
+roof       5    10             art\tile\Blk\BlkBse0a.fofrm
+roof       5    10             art\tile\Blk\BlkBse0a.fofrm
+tile       6    10             art\tile\Std\StdBse0a.fofrm
+roof       6    10             art\tile\Blk\BlkBse0a.fofrm
+roof       6    10             art\tile\Blk\BlkBse0a.fofrm
+tile       7    10             art\tile\Std\StdBse0b.fofrm
+roof       7    10             art\tile\Blk\BlkBse0a.fofrm
+roof       7    10             art\tile\Blk\BlkBse0a.fofrm
+tile       8    10             art\tile\Std\StdBse0d.fofrm
+roof       8    10             art\tile\Blk\BlkBse0a.fofrm
+roof       8    10             art\tile\Blk\BlkBse0a.fofrm
+tile       9    10             art\tile\Std\StdBse0a.fofrm
+tile       10   10             art\tile\Std\StdBse0f.fofrm
+tile       11   10             art\tile\Std\StdBse0c.fofrm
+tile       12   10             art\tile\Std\StdBse0h.fofrm
+tile       13   10             art\tile\Std\StdBse0c.fofrm
+tile       14   10             art\tile\Std\StdBse0g.fofrm
+tile       15   10             art\tile\Std\StdBse0f.fofrm
+tile       16   10             art\tile\Std\StdBse0d.fofrm
+tile       17   10             art\tile\Std\StdBse0f.fofrm
+tile       18   10             art\tile\Std\StdBse0h.fofrm
+tile       19   10             art\tile\Std\StdBse0b.fofrm
+tile       20   10             art\tile\Std\StdBse0e.fofrm
+tile       21   10             art\tile\Std\StdBse0h.fofrm
+tile       22   10             art\tile\Std\StdBse0d.fofrm
+tile       23   10             art\tile\Std\StdBse0b.fofrm
+tile       24   10             art\tile\Std\StdBse0a.fofrm
+tile       25   10             art\tile\Std\StdBse0e.fofrm
+tile       26   10             art\tile\Std\StdBse0g.fofrm
+tile       27   10             art\tile\Std\StdBse0h.fofrm
+tile       28   10             art\tile\Std\StdBse0h.fofrm
+tile       29   10             art\tile\Std\StdBse0g.fofrm
+tile       0    11             art\tile\Std\StdBse0h.fofrm
+tile       1    11             art\tile\Std\StdBse0c.fofrm
+tile       2    11             art\tile\Std\StdBse0c.fofrm
+roof       2    11             art\tile\Blk\BlkBse0a.fofrm
+roof       2    11             art\tile\Blk\BlkBse0a.fofrm
+tile       3    11             art\tile\Std\StdBse0h.fofrm
+roof       3    11             art\tile\Blk\BlkBse0a.fofrm
+roof       3    11             art\tile\Blk\BlkBse0a.fofrm
+tile       4    11             art\tile\Std\StdBse0d.fofrm
+roof       4    11             art\tile\Blk\BlkBse0a.fofrm
+roof       4    11             art\tile\Blk\BlkBse0a.fofrm
+tile       5    11             art\tile\Std\StdBse0e.fofrm
+roof       5    11             art\tile\Blk\BlkBse0a.fofrm
+roof       5    11             art\tile\Blk\BlkBse0a.fofrm
+tile       6    11             art\tile\Std\StdBse0g.fofrm
+roof       6    11             art\tile\Blk\BlkBse0a.fofrm
+roof       6    11             art\tile\Blk\BlkBse0a.fofrm
+tile       7    11             art\tile\Std\StdBse0e.fofrm
+roof       7    11             art\tile\Blk\BlkBse0a.fofrm
+roof       7    11             art\tile\Blk\BlkBse0a.fofrm
+tile       8    11             art\tile\Std\StdBse0c.fofrm
+roof       8    11             art\tile\Blk\BlkBse0a.fofrm
+roof       8    11             art\tile\Blk\BlkBse0a.fofrm
+roof       8    11             art\tile\Blk\BlkBse0a.fofrm
+tile       9    11             art\tile\Std\StdBse0c.fofrm
+tile       10   11             art\tile\Std\StdBse0e.fofrm
+tile       11   11             art\tile\Std\StdBse0a.fofrm
+tile       12   11             art\tile\Std\StdBse0f.fofrm
+tile       13   11             art\tile\Std\StdBse0h.fofrm
+tile       14   11             art\tile\Std\StdBse0a.fofrm
+tile       15   11             art\tile\Std\StdBse0h.fofrm
+tile       16   11             art\tile\Std\StdBse0a.fofrm
+tile       17   11             art\tile\Std\StdBse0f.fofrm
+tile       18   11             art\tile\Std\StdBse0h.fofrm
+tile       19   11             art\tile\Std\StdBse0h.fofrm
+tile       20   11             art\tile\Std\StdBse0d.fofrm
+tile       21   11             art\tile\Std\StdBse0e.fofrm
+tile       22   11             art\tile\Std\StdBse0b.fofrm
+tile       23   11             art\tile\Std\StdBse0a.fofrm
+tile       24   11             art\tile\Std\StdBse0c.fofrm
+tile       25   11             art\tile\Std\StdBse0f.fofrm
+tile       26   11             art\tile\Std\StdBse0d.fofrm
+tile       27   11             art\tile\Std\StdBse0h.fofrm
+tile       28   11             art\tile\Std\StdBse0c.fofrm
+tile       29   11             art\tile\Std\StdBse0c.fofrm
+tile       0    12             art\tile\Std\StdBse0a.fofrm
+tile       1    12             art\tile\Std\StdBse0d.fofrm
+tile       2    12             art\tile\Std\StdBse0b.fofrm
+roof       2    12             art\tile\Blk\BlkBse0a.fofrm
+roof       2    12             art\tile\Blk\BlkBse0a.fofrm
+tile       3    12             art\tile\Std\StdBse0d.fofrm
+roof       3    12             art\tile\Blk\BlkBse0a.fofrm
+roof       3    12             art\tile\Blk\BlkBse0a.fofrm
+tile       4    12             art\tile\Std\StdBse0e.fofrm
+roof       4    12             art\tile\Blk\BlkBse0a.fofrm
+roof       4    12             art\tile\Blk\BlkBse0a.fofrm
+roof       4    12             art\tile\Blk\BlkBse0a.fofrm
+roof       4    12             art\tile\Blk\BlkBse0a.fofrm
+tile       5    12             art\tile\Std\StdBse0h.fofrm
+roof       5    12             art\tile\Blk\BlkBse0a.fofrm
+roof       5    12             art\tile\Blk\BlkBse0a.fofrm
+tile       6    12             art\tile\Std\StdBse0h.fofrm
+roof       6    12             art\tile\Blk\BlkBse0a.fofrm
+roof       6    12             art\tile\Blk\BlkBse0a.fofrm
+tile       7    12             art\tile\Std\StdBse0e.fofrm
+roof       7    12             art\tile\Blk\BlkBse0a.fofrm
+roof       7    12             art\tile\Blk\BlkBse0a.fofrm
+tile       8    12             art\tile\Std\StdBse0h.fofrm
+roof       8    12             art\tile\Blk\BlkBse0a.fofrm
+roof       8    12             art\tile\Blk\BlkBse0a.fofrm
+tile       9    12             art\tile\Std\StdBse0b.fofrm
+tile       10   12             art\tile\Std\StdBse0g.fofrm
+tile       11   12             art\tile\Std\StdBse0f.fofrm
+tile       12   12             art\tile\Std\StdBse0e.fofrm
+tile       13   12             art\tile\Std\StdBse0g.fofrm
+tile       14   12             art\tile\Std\StdBse0h.fofrm
+tile       15   12             art\tile\Std\StdBse0d.fofrm
+tile       16   12             art\tile\Std\StdBse0e.fofrm
+tile       17   12             art\tile\Std\StdBse0c.fofrm
+tile       18   12             art\tile\Std\StdBse0g.fofrm
+tile       19   12             art\tile\Std\StdBse0e.fofrm
+tile       20   12             art\tile\Std\StdBse0h.fofrm
+tile       21   12             art\tile\Std\StdBse0a.fofrm
+tile       22   12             art\tile\Std\StdBse0d.fofrm
+tile       23   12             art\tile\Std\StdBse0d.fofrm
+tile       24   12             art\tile\Std\StdBse0c.fofrm
+tile       25   12             art\tile\Std\StdBse0a.fofrm
+tile       26   12             art\tile\Std\StdBse0g.fofrm
+tile       27   12             art\tile\Std\StdBse0e.fofrm
+tile       28   12             art\tile\Std\StdBse0b.fofrm
+tile       29   12             art\tile\Std\StdBse0a.fofrm
+tile       0    13             art\tile\Std\StdBse0f.fofrm
+tile       1    13             art\tile\Std\StdBse0h.fofrm
+tile       2    13             art\tile\Std\StdBse0c.fofrm
+tile       3    13             art\tile\Std\StdBse0a.fofrm
+roof       3    13             art\tile\Blk\BlkBse0a.fofrm
+roof       3    13             art\tile\Blk\BlkBse0a.fofrm
+tile       4    13             art\tile\Std\StdBse0d.fofrm
+roof       4    13             art\tile\Blk\BlkBse0a.fofrm
+roof       4    13             art\tile\Blk\BlkBse0a.fofrm
+tile       5    13             art\tile\Std\StdBse0f.fofrm
+roof       5    13             art\tile\Blk\BlkBse0a.fofrm
+roof       5    13             art\tile\Blk\BlkBse0a.fofrm
+tile       6    13             art\tile\Std\StdBse0c.fofrm
+roof       6    13             art\tile\Blk\BlkBse0a.fofrm
+roof       6    13             art\tile\Blk\BlkBse0a.fofrm
+tile       7    13             art\tile\Std\StdBse0b.fofrm
+roof       7    13             art\tile\Blk\BlkBse0a.fofrm
+roof       7    13             art\tile\Blk\BlkBse0a.fofrm
+tile       8    13             art\tile\Std\StdBse0e.fofrm
+roof       8    13             art\tile\Blk\BlkBse0a.fofrm
+roof       8    13             art\tile\Blk\BlkBse0a.fofrm
+tile       9    13             art\tile\Std\StdBse0e.fofrm
+tile       10   13             art\tile\Std\StdBse0h.fofrm
+tile       11   13             art\tile\Std\StdBse0e.fofrm
+tile       12   13             art\tile\Std\StdBse0b.fofrm
+tile       13   13             art\tile\Std\StdBse0b.fofrm
+tile       14   13             art\tile\Std\StdBse0g.fofrm
+tile       15   13             art\tile\Std\StdBse0d.fofrm
+tile       16   13             art\tile\Std\StdBse0a.fofrm
+tile       17   13             art\tile\Std\StdBse0b.fofrm
+tile       18   13             art\tile\Std\StdBse0a.fofrm
+tile       19   13             art\tile\Std\StdBse0g.fofrm
+tile       20   13             art\tile\Std\StdBse0c.fofrm
+tile       21   13             art\tile\Std\StdBse0b.fofrm
+tile       22   13             art\tile\Std\StdBse0g.fofrm
+tile       23   13             art\tile\Std\StdBse0a.fofrm
+tile       24   13             art\tile\Std\StdBse0d.fofrm
+tile       25   13             art\tile\Std\StdBse0c.fofrm
+tile       26   13             art\tile\Std\StdBse0a.fofrm
+tile       27   13             art\tile\Std\StdBse0e.fofrm
+tile       28   13             art\tile\Std\StdBse0b.fofrm
+tile       29   13             art\tile\Std\StdBse0a.fofrm
+tile       0    14             art\tile\Std\StdBse0g.fofrm
+tile       1    14             art\tile\Std\StdBse0c.fofrm
+tile       2    14             art\tile\Std\StdBse0e.fofrm
+tile       3    14             art\tile\Std\StdBse0g.fofrm
+tile       4    14             art\tile\Std\StdBse0g.fofrm
+roof       4    14             art\tile\Blk\BlkBse0a.fofrm
+roof       4    14             art\tile\Blk\BlkBse0a.fofrm
+tile       5    14             art\tile\Std\StdBse0c.fofrm
+roof       5    14             art\tile\Blk\BlkBse0a.fofrm
+roof       5    14             art\tile\Blk\BlkBse0a.fofrm
+tile       6    14             art\tile\Std\StdBse0e.fofrm
+roof       6    14             art\tile\Blk\BlkBse0a.fofrm
+roof       6    14             art\tile\Blk\BlkBse0a.fofrm
+tile       7    14             art\tile\Std\StdBse0a.fofrm
+roof       7    14             art\tile\Blk\BlkBse0a.fofrm
+roof       7    14             art\tile\Blk\BlkBse0a.fofrm
+tile       8    14             art\tile\Std\StdBse0g.fofrm
+roof       8    14             art\tile\Blk\BlkBse0a.fofrm
+roof       8    14             art\tile\Blk\BlkBse0a.fofrm
+tile       9    14             art\tile\Std\StdBse0c.fofrm
+tile       10   14             art\tile\Std\StdBse0f.fofrm
+tile       11   14             art\tile\Std\StdBse0c.fofrm
+tile       12   14             art\tile\Std\StdBse0b.fofrm
+tile       13   14             art\tile\Std\StdBse0a.fofrm
+tile       14   14             art\tile\Std\StdBse0h.fofrm
+tile       15   14             art\tile\Std\StdBse0g.fofrm
+tile       16   14             art\tile\Std\StdBse0f.fofrm
+tile       17   14             art\tile\Std\StdBse0d.fofrm
+tile       18   14             art\tile\Std\StdBse0h.fofrm
+tile       19   14             art\tile\Std\StdBse0d.fofrm
+tile       20   14             art\tile\Std\StdBse0c.fofrm
+tile       21   14             art\tile\Std\StdBse0e.fofrm
+tile       22   14             art\tile\Std\StdBse0c.fofrm
+tile       23   14             art\tile\Std\StdBse0f.fofrm
+tile       24   14             art\tile\Std\StdBse0c.fofrm
+tile       25   14             art\tile\Std\StdBse0f.fofrm
+tile       26   14             art\tile\Std\StdBse0a.fofrm
+tile       27   14             art\tile\Std\StdBse0h.fofrm
+tile       28   14             art\tile\Std\StdBse0b.fofrm
+tile       29   14             art\tile\Std\StdBse0a.fofrm
+tile       0    15             art\tile\Std\StdBse0e.fofrm
+tile       1    15             art\tile\Std\StdBse0h.fofrm
+tile       2    15             art\tile\Std\StdBse0b.fofrm
+tile       3    15             art\tile\Std\StdBse0a.fofrm
+tile       4    15             art\tile\Std\StdBse0a.fofrm
+tile       5    15             art\tile\Std\StdBse0a.fofrm
+roof       5    15             art\tile\Blk\BlkBse0a.fofrm
+roof       5    15             art\tile\Blk\BlkBse0a.fofrm
+tile       6    15             art\tile\Std\StdBse0a.fofrm
+roof       6    15             art\tile\Blk\BlkBse0a.fofrm
+roof       6    15             art\tile\Blk\BlkBse0a.fofrm
+tile       7    15             art\tile\Std\StdBse0e.fofrm
+roof       7    15             art\tile\Blk\BlkBse0a.fofrm
+roof       7    15             art\tile\Blk\BlkBse0a.fofrm
+tile       8    15             art\tile\Std\StdBse0f.fofrm
+roof       8    15             art\tile\Blk\BlkBse0a.fofrm
+roof       8    15             art\tile\Blk\BlkBse0a.fofrm
+tile       9    15             art\tile\Std\StdBse0e.fofrm
+tile       10   15             art\tile\Std\StdBse0c.fofrm
+tile       11   15             art\tile\Std\StdBse0b.fofrm
+tile       12   15             art\tile\Std\StdBse0c.fofrm
+tile       13   15             art\tile\Std\StdBse0g.fofrm
+tile       14   15             art\tile\Std\StdBse0b.fofrm
+tile       15   15             art\tile\Std\StdBse0g.fofrm
+tile       16   15             art\tile\Std\StdBse0d.fofrm
+tile       17   15             art\tile\Std\StdBse0h.fofrm
+tile       18   15             art\tile\Std\StdBse0f.fofrm
+tile       19   15             art\tile\Std\StdBse0f.fofrm
+tile       20   15             art\tile\Std\StdBse0e.fofrm
+tile       21   15             art\tile\Std\StdBse0e.fofrm
+tile       22   15             art\tile\Std\StdBse0b.fofrm
+tile       23   15             art\tile\Std\StdBse0h.fofrm
+tile       24   15             art\tile\Std\StdBse0h.fofrm
+tile       25   15             art\tile\Std\StdBse0h.fofrm
+tile       26   15             art\tile\Std\StdBse0c.fofrm
+tile       27   15             art\tile\Std\StdBse0g.fofrm
+tile       28   15             art\tile\Std\StdBse0d.fofrm
+tile       29   15             art\tile\Std\StdBse0e.fofrm
+tile       0    16             art\tile\Std\StdBse0f.fofrm
+tile       1    16             art\tile\Std\StdBse0h.fofrm
+tile       2    16             art\tile\Std\StdBse0c.fofrm
+tile       3    16             art\tile\Std\StdBse0g.fofrm
+tile       4    16             art\tile\Std\StdBse0h.fofrm
+tile       5    16             art\tile\Std\StdBse0e.fofrm
+tile       6    16             art\tile\Std\StdBse0d.fofrm
+roof       6    16             art\tile\Blk\BlkBse0a.fofrm
+roof       6    16             art\tile\Blk\BlkBse0a.fofrm
+tile       7    16             art\tile\Std\StdBse0b.fofrm
+roof       7    16             art\tile\Blk\BlkBse0a.fofrm
+roof       7    16             art\tile\Blk\BlkBse0a.fofrm
+tile       8    16             art\tile\Std\StdBse0c.fofrm
+roof       8    16             art\tile\Blk\BlkBse0a.fofrm
+roof       8    16             art\tile\Blk\BlkBse0a.fofrm
+tile       9    16             art\tile\Std\StdBse0h.fofrm
+tile       10   16             art\tile\Std\StdBse0e.fofrm
+tile       11   16             art\tile\Std\StdBse0g.fofrm
+tile       12   16             art\tile\Std\StdBse0h.fofrm
+tile       13   16             art\tile\Std\StdBse0b.fofrm
+tile       14   16             art\tile\Std\StdBse0f.fofrm
+tile       15   16             art\tile\Std\StdBse0e.fofrm
+tile       16   16             art\tile\Std\StdBse0c.fofrm
+tile       17   16             art\tile\Std\StdBse0e.fofrm
+tile       18   16             art\tile\Std\StdBse0h.fofrm
+tile       19   16             art\tile\Std\StdBse0f.fofrm
+tile       20   16             art\tile\Std\StdBse0b.fofrm
+tile       21   16             art\tile\Std\StdBse0d.fofrm
+tile       22   16             art\tile\Std\StdBse0f.fofrm
+tile       23   16             art\tile\Std\StdBse0c.fofrm
+tile       24   16             art\tile\Std\StdBse0c.fofrm
+tile       25   16             art\tile\Std\StdBse0c.fofrm
+tile       26   16             art\tile\Std\StdBse0b.fofrm
+tile       27   16             art\tile\Std\StdBse0d.fofrm
+tile       28   16             art\tile\Std\StdBse0h.fofrm
+tile       29   16             art\tile\Std\StdBse0f.fofrm
+tile       0    17             art\tile\Std\StdBse0f.fofrm
+tile       1    17             art\tile\Std\StdBse0a.fofrm
+tile       2    17             art\tile\Std\StdBse0c.fofrm
+tile       3    17             art\tile\Std\StdBse0h.fofrm
+tile       4    17             art\tile\Std\StdBse0g.fofrm
+tile       5    17             art\tile\Std\StdBse0d.fofrm
+tile       6    17             art\tile\Std\StdBse0e.fofrm
+tile       7    17             art\tile\Std\StdBse0h.fofrm
+tile       8    17             art\tile\Std\StdBse0g.fofrm
+roof       8    17             art\tile\Blk\BlkBse0a.fofrm
+roof       8    17             art\tile\Blk\BlkBse0a.fofrm
+tile       9    17             art\tile\Std\StdBse0h.fofrm
+tile       10   17             art\tile\Std\StdBse0a.fofrm
+tile       11   17             art\tile\Std\StdBse0f.fofrm
+tile       12   17             art\tile\Std\StdBse0h.fofrm
+tile       13   17             art\tile\Std\StdBse0f.fofrm
+tile       14   17             art\tile\Std\StdBse0b.fofrm
+tile       15   17             art\tile\Std\StdBse0e.fofrm
+tile       16   17             art\tile\Std\StdBse0a.fofrm
+tile       17   17             art\tile\Std\StdBse0d.fofrm
+tile       18   17             art\tile\Std\StdBse0g.fofrm
+tile       19   17             art\tile\Std\StdBse0b.fofrm
+tile       20   17             art\tile\Std\StdBse0h.fofrm
+tile       21   17             art\tile\Std\StdBse0a.fofrm
+tile       22   17             art\tile\Std\StdBse0h.fofrm
+tile       23   17             art\tile\Std\StdBse0g.fofrm
+tile       24   17             art\tile\Std\StdBse0h.fofrm
+tile       25   17             art\tile\Std\StdBse0b.fofrm
+tile       26   17             art\tile\Std\StdBse0c.fofrm
+tile       27   17             art\tile\Std\StdBse0h.fofrm
+tile       28   17             art\tile\Std\StdBse0d.fofrm
+tile       29   17             art\tile\Std\StdBse0g.fofrm
+tile       0    18             art\tile\Std\StdBse0c.fofrm
+tile       1    18             art\tile\Std\StdBse0f.fofrm
+tile       2    18             art\tile\Std\StdBse0d.fofrm
+tile       3    18             art\tile\Std\StdBse0g.fofrm
+tile       4    18             art\tile\Std\StdBse0g.fofrm
+tile       5    18             art\tile\Std\StdBse0c.fofrm
+tile       6    18             art\tile\Std\StdBse0d.fofrm
+tile       7    18             art\tile\Std\StdBse0d.fofrm
+tile       8    18             art\tile\Std\StdBse0b.fofrm
+tile       9    18             art\tile\Std\StdBse0c.fofrm
+tile       10   18             art\tile\Std\StdBse0b.fofrm
+tile       11   18             art\tile\Std\StdBse0b.fofrm
+tile       12   18             art\tile\Std\StdBse0d.fofrm
+tile       13   18             art\tile\Std\StdBse0h.fofrm
+tile       14   18             art\tile\Std\StdBse0f.fofrm
+tile       15   18             art\tile\Std\StdBse0d.fofrm
+tile       16   18             art\tile\Std\StdBse0a.fofrm
+tile       17   18             art\tile\Std\StdBse0c.fofrm
+tile       18   18             art\tile\Std\StdBse0d.fofrm
+tile       19   18             art\tile\Std\StdBse0e.fofrm
+tile       20   18             art\tile\Std\StdBse0h.fofrm
+tile       21   18             art\tile\Std\StdBse0f.fofrm
+tile       22   18             art\tile\Std\StdBse0h.fofrm
+tile       23   18             art\tile\Std\StdBse0b.fofrm
+tile       24   18             art\tile\Std\StdBse0d.fofrm
+tile       25   18             art\tile\Std\StdBse0f.fofrm
+tile       26   18             art\tile\Std\StdBse0h.fofrm
+tile       27   18             art\tile\Std\StdBse0c.fofrm
+tile       28   18             art\tile\Std\StdBse0e.fofrm
+tile       29   18             art\tile\Std\StdBse0g.fofrm
+tile       0    19             art\tile\Std\StdBse0a.fofrm
+tile       1    19             art\tile\Std\StdBse0c.fofrm
+tile       2    19             art\tile\Std\StdBse0g.fofrm
+tile       3    19             art\tile\Std\StdBse0d.fofrm
+tile       4    19             art\tile\Std\StdBse0b.fofrm
+tile       5    19             art\tile\Std\StdBse0a.fofrm
+tile       6    19             art\tile\Std\StdBse0f.fofrm
+tile       7    19             art\tile\Std\StdBse0d.fofrm
+tile       8    19             art\tile\Std\StdBse0e.fofrm
+tile       9    19             art\tile\Std\StdBse0f.fofrm
+tile       10   19             art\tile\Std\StdBse0d.fofrm
+tile       11   19             art\tile\Std\StdBse0g.fofrm
+tile       12   19             art\tile\Std\StdBse0c.fofrm
+tile       13   19             art\tile\Std\StdBse0h.fofrm
+tile       14   19             art\tile\Std\StdBse0f.fofrm
+tile       15   19             art\tile\Std\StdBse0c.fofrm
+tile       16   19             art\tile\Std\StdBse0d.fofrm
+tile       17   19             art\tile\Std\StdBse0c.fofrm
+tile       18   19             art\tile\Std\StdBse0d.fofrm
+tile       19   19             art\tile\Std\StdBse0e.fofrm
+tile       20   19             art\tile\Std\StdBse0f.fofrm
+tile       21   19             art\tile\Std\StdBse0g.fofrm
+tile       22   19             art\tile\Std\StdBse0d.fofrm
+tile       23   19             art\tile\Std\StdBse0e.fofrm
+tile       24   19             art\tile\Std\StdBse0h.fofrm
+tile       25   19             art\tile\Std\StdBse0b.fofrm
+tile       26   19             art\tile\Std\StdBse0e.fofrm
+tile       27   19             art\tile\Std\StdBse0b.fofrm
+tile       28   19             art\tile\Std\StdBse0b.fofrm
+tile       29   19             art\tile\Std\StdBse0b.fofrm
+tile       0    20             art\tile\Std\StdBse0e.fofrm
+tile       1    20             art\tile\Std\StdBse0c.fofrm
+tile       2    20             art\tile\Std\StdBse0a.fofrm
+tile       3    20             art\tile\Std\StdBse0c.fofrm
+tile       4    20             art\tile\Std\StdBse0d.fofrm
+tile       5    20             art\tile\Std\StdBse0h.fofrm
+tile       6    20             art\tile\Std\StdBse0c.fofrm
+tile       7    20             art\tile\Std\StdBse0d.fofrm
+tile       8    20             art\tile\Std\StdBse0e.fofrm
+tile       9    20             art\tile\Std\StdBse0c.fofrm
+tile       10   20             art\tile\Std\StdBse0a.fofrm
+tile       11   20             art\tile\Std\StdBse0h.fofrm
+tile       12   20             art\tile\Std\StdBse0g.fofrm
+tile       13   20             art\tile\Std\StdBse0c.fofrm
+tile       14   20             art\tile\Std\StdBse0f.fofrm
+tile       15   20             art\tile\Std\StdBse0a.fofrm
+tile       16   20             art\tile\Std\StdBse0f.fofrm
+tile       17   20             art\tile\Std\StdBse0g.fofrm
+tile       18   20             art\tile\Std\StdBse0d.fofrm
+tile       19   20             art\tile\Std\StdBse0a.fofrm
+tile       20   20             art\tile\Std\StdBse0a.fofrm
+tile       21   20             art\tile\Std\StdBse0c.fofrm
+tile       22   20             art\tile\Std\StdBse0h.fofrm
+tile       23   20             art\tile\Std\StdBse0b.fofrm
+tile       24   20             art\tile\Std\StdBse0g.fofrm
+tile       25   20             art\tile\Std\StdBse0b.fofrm
+tile       26   20             art\tile\Std\StdBse0e.fofrm
+tile       27   20             art\tile\Std\StdBse0f.fofrm
+tile       28   20             art\tile\Std\StdBse0h.fofrm
+tile       29   20             art\tile\Std\StdBse0a.fofrm
+tile       0    21             art\tile\Std\StdBse0c.fofrm
+tile       1    21             art\tile\Std\StdBse0h.fofrm
+tile       2    21             art\tile\Std\StdBse0f.fofrm
+tile       3    21             art\tile\Std\StdBse0f.fofrm
+tile       4    21             art\tile\Std\StdBse0c.fofrm
+tile       5    21             art\tile\Std\StdBse0g.fofrm
+tile       6    21             art\tile\Std\StdBse0e.fofrm
+tile       7    21             art\tile\Std\StdBse0a.fofrm
+tile       8    21             art\tile\Std\StdBse0b.fofrm
+tile       9    21             art\tile\Std\StdBse0a.fofrm
+tile       10   21             art\tile\Std\StdBse0c.fofrm
+tile       11   21             art\tile\Std\StdBse0c.fofrm
+tile       12   21             art\tile\Std\StdBse0f.fofrm
+tile       13   21             art\tile\Std\StdBse0g.fofrm
+tile       14   21             art\tile\Std\StdBse0d.fofrm
+tile       15   21             art\tile\Std\StdBse0b.fofrm
+tile       16   21             art\tile\Std\StdBse0b.fofrm
+tile       17   21             art\tile\Std\StdBse0h.fofrm
+tile       18   21             art\tile\Std\StdBse0d.fofrm
+tile       19   21             art\tile\Std\StdBse0e.fofrm
+tile       20   21             art\tile\Std\StdBse0a.fofrm
+tile       21   21             art\tile\Std\StdBse0c.fofrm
+tile       22   21             art\tile\Std\StdBse0h.fofrm
+tile       23   21             art\tile\Std\StdBse0h.fofrm
+tile       24   21             art\tile\Std\StdBse0c.fofrm
+tile       25   21             art\tile\Std\StdBse0a.fofrm
+tile       26   21             art\tile\Std\StdBse0g.fofrm
+tile       27   21             art\tile\Std\StdBse0e.fofrm
+tile       28   21             art\tile\Std\StdBse0c.fofrm
+tile       29   21             art\tile\Std\StdBse0e.fofrm
+tile       0    22             art\tile\Std\StdBse0f.fofrm
+tile       1    22             art\tile\Std\StdBse0b.fofrm
+tile       2    22             art\tile\Std\StdBse0h.fofrm
+tile       3    22             art\tile\Std\StdBse0c.fofrm
+tile       4    22             art\tile\Std\StdBse0a.fofrm
+tile       5    22             art\tile\Std\StdBse0h.fofrm
+tile       6    22             art\tile\Std\StdBse0e.fofrm
+tile       7    22             art\tile\Std\StdBse0d.fofrm
+tile       8    22             art\tile\Std\StdBse0f.fofrm
+tile       9    22             art\tile\Std\StdBse0a.fofrm
+tile       10   22             art\tile\Std\StdBse0a.fofrm
+tile       11   22             art\tile\Std\StdBse0a.fofrm
+tile       12   22             art\tile\Std\StdBse0d.fofrm
+tile       13   22             art\tile\Std\StdBse0f.fofrm
+tile       14   22             art\tile\Std\StdBse0d.fofrm
+tile       15   22             art\tile\Std\StdBse0b.fofrm
+tile       16   22             art\tile\Std\StdBse0g.fofrm
+tile       17   22             art\tile\Std\StdBse0a.fofrm
+tile       18   22             art\tile\Std\StdBse0c.fofrm
+tile       19   22             art\tile\Std\StdBse0d.fofrm
+tile       20   22             art\tile\Std\StdBse0d.fofrm
+tile       21   22             art\tile\Std\StdBse0d.fofrm
+tile       22   22             art\tile\Std\StdBse0h.fofrm
+tile       23   22             art\tile\Std\StdBse0h.fofrm
+tile       24   22             art\tile\Std\StdBse0e.fofrm
+tile       25   22             art\tile\Std\StdBse0a.fofrm
+tile       26   22             art\tile\Std\StdBse0d.fofrm
+tile       27   22             art\tile\Std\StdBse0c.fofrm
+tile       28   22             art\tile\Std\StdBse0f.fofrm
+tile       29   22             art\tile\Std\StdBse0d.fofrm
+tile       0    23             art\tile\Std\StdBse0h.fofrm
+tile       1    23             art\tile\Std\StdBse0f.fofrm
+tile       2    23             art\tile\Std\StdBse0c.fofrm
+tile       3    23             art\tile\Std\StdBse0c.fofrm
+tile       4    23             art\tile\Std\StdBse0a.fofrm
+tile       5    23             art\tile\Std\StdBse0a.fofrm
+tile       6    23             art\tile\Std\StdBse0f.fofrm
+tile       7    23             art\tile\Std\StdBse0g.fofrm
+tile       8    23             art\tile\Std\StdBse0g.fofrm
+tile       9    23             art\tile\Std\StdBse0h.fofrm
+tile       10   23             art\tile\Std\StdBse0a.fofrm
+tile       11   23             art\tile\Std\StdBse0g.fofrm
+tile       12   23             art\tile\Std\StdBse0a.fofrm
+tile       13   23             art\tile\Std\StdBse0b.fofrm
+tile       14   23             art\tile\Std\StdBse0d.fofrm
+tile       15   23             art\tile\Std\StdBse0g.fofrm
+tile       16   23             art\tile\Std\StdBse0f.fofrm
+tile       17   23             art\tile\Std\StdBse0a.fofrm
+tile       18   23             art\tile\Std\StdBse0b.fofrm
+tile       19   23             art\tile\Std\StdBse0e.fofrm
+tile       20   23             art\tile\Std\StdBse0f.fofrm
+tile       21   23             art\tile\Std\StdBse0e.fofrm
+tile       22   23             art\tile\Std\StdBse0a.fofrm
+tile       23   23             art\tile\Std\StdBse0d.fofrm
+tile       24   23             art\tile\Std\StdBse0e.fofrm
+tile       25   23             art\tile\Std\StdBse0e.fofrm
+tile       26   23             art\tile\Std\StdBse0f.fofrm
+tile       27   23             art\tile\Std\StdBse0f.fofrm
+tile       28   23             art\tile\Std\StdBse0d.fofrm
+tile       29   23             art\tile\Std\StdBse0e.fofrm
+tile       0    24             art\tile\Std\StdBse0b.fofrm
+tile       1    24             art\tile\Std\StdBse0g.fofrm
+tile       2    24             art\tile\Std\StdBse0b.fofrm
+tile       3    24             art\tile\Std\StdBse0f.fofrm
+tile       4    24             art\tile\Std\StdBse0h.fofrm
+tile       5    24             art\tile\Std\StdBse0d.fofrm
+tile       6    24             art\tile\Std\StdBse0f.fofrm
+tile       7    24             art\tile\Std\StdBse0f.fofrm
+tile       8    24             art\tile\Std\StdBse0g.fofrm
+tile       9    24             art\tile\Std\StdBse0d.fofrm
+tile       10   24             art\tile\Std\StdBse0e.fofrm
+tile       11   24             art\tile\Std\StdBse0g.fofrm
+tile       12   24             art\tile\Std\StdBse0h.fofrm
+tile       13   24             art\tile\Std\StdBse0d.fofrm
+tile       14   24             art\tile\Std\StdBse0d.fofrm
+tile       15   24             art\tile\Std\StdBse0c.fofrm
+tile       16   24             art\tile\Std\StdBse0d.fofrm
+tile       17   24             art\tile\Std\StdBse0e.fofrm
+tile       18   24             art\tile\Std\StdBse0f.fofrm
+tile       19   24             art\tile\Std\StdBse0e.fofrm
+tile       20   24             art\tile\Std\StdBse0c.fofrm
+tile       21   24             art\tile\Std\StdBse0e.fofrm
+tile       22   24             art\tile\Std\StdBse0c.fofrm
+tile       23   24             art\tile\Std\StdBse0d.fofrm
+tile       24   24             art\tile\Std\StdBse0g.fofrm
+tile       25   24             art\tile\Std\StdBse0f.fofrm
+tile       26   24             art\tile\Std\StdBse0g.fofrm
+tile       27   24             art\tile\Std\StdBse0c.fofrm
+tile       28   24             art\tile\Std\StdBse0g.fofrm
+tile       29   24             art\tile\Std\StdBse0d.fofrm
+tile       0    25             art\tile\Std\StdBse0h.fofrm
+tile       1    25             art\tile\Std\StdBse0b.fofrm
+tile       2    25             art\tile\Std\StdBse0a.fofrm
+tile       3    25             art\tile\Std\StdBse0a.fofrm
+tile       4    25             art\tile\Std\StdBse0a.fofrm
+tile       5    25             art\tile\Std\StdBse0b.fofrm
+tile       6    25             art\tile\Std\StdBse0b.fofrm
+tile       7    25             art\tile\Std\StdBse0a.fofrm
+tile       8    25             art\tile\Std\StdBse0a.fofrm
+tile       9    25             art\tile\Std\StdBse0h.fofrm
+tile       10   25             art\tile\Std\StdBse0h.fofrm
+tile       11   25             art\tile\Std\StdBse0f.fofrm
+tile       12   25             art\tile\Std\StdBse0c.fofrm
+tile       13   25             art\tile\Std\StdBse0c.fofrm
+tile       14   25             art\tile\Std\StdBse0h.fofrm
+tile       15   25             art\tile\Std\StdBse0b.fofrm
+tile       16   25             art\tile\Std\StdBse0b.fofrm
+tile       17   25             art\tile\Std\StdBse0h.fofrm
+tile       18   25             art\tile\Std\StdBse0e.fofrm
+tile       19   25             art\tile\Std\StdBse0h.fofrm
+tile       20   25             art\tile\Std\StdBse0e.fofrm
+tile       21   25             art\tile\Std\StdBse0a.fofrm
+tile       22   25             art\tile\Std\StdBse0d.fofrm
+tile       23   25             art\tile\Std\StdBse0e.fofrm
+tile       24   25             art\tile\Std\StdBse0f.fofrm
+tile       25   25             art\tile\Std\StdBse0f.fofrm
+tile       26   25             art\tile\Std\StdBse0b.fofrm
+tile       27   25             art\tile\Std\StdBse0f.fofrm
+tile       28   25             art\tile\Std\StdBse0h.fofrm
+tile       29   25             art\tile\Std\StdBse0h.fofrm
+tile       0    26             art\tile\Std\StdBse0b.fofrm
+tile       1    26             art\tile\Std\StdBse0h.fofrm
+tile       2    26             art\tile\Std\StdBse0e.fofrm
+tile       3    26             art\tile\Std\StdBse0d.fofrm
+tile       4    26             art\tile\Std\StdBse0g.fofrm
+tile       5    26             art\tile\Std\StdBse0e.fofrm
+tile       6    26             art\tile\Std\StdBse0f.fofrm
+tile       7    26             art\tile\Std\StdBse0a.fofrm
+tile       8    26             art\tile\Std\StdBse0g.fofrm
+tile       9    26             art\tile\Std\StdBse0h.fofrm
+tile       10   26             art\tile\Std\StdBse0g.fofrm
+tile       11   26             art\tile\Std\StdBse0h.fofrm
+tile       12   26             art\tile\Std\StdBse0e.fofrm
+tile       13   26             art\tile\Std\StdBse0c.fofrm
+tile       14   26             art\tile\Std\StdBse0f.fofrm
+tile       15   26             art\tile\Std\StdBse0c.fofrm
+tile       16   26             art\tile\Std\StdBse0b.fofrm
+tile       17   26             art\tile\Std\StdBse0d.fofrm
+tile       18   26             art\tile\Std\StdBse0g.fofrm
+tile       19   26             art\tile\Std\StdBse0e.fofrm
+tile       20   26             art\tile\Std\StdBse0g.fofrm
+tile       21   26             art\tile\Std\StdBse0h.fofrm
+tile       22   26             art\tile\Std\StdBse0h.fofrm
+tile       23   26             art\tile\Std\StdBse0a.fofrm
+tile       24   26             art\tile\Std\StdBse0d.fofrm
+tile       25   26             art\tile\Std\StdBse0a.fofrm
+tile       26   26             art\tile\Std\StdBse0a.fofrm
+tile       27   26             art\tile\Std\StdBse0d.fofrm
+tile       28   26             art\tile\Std\StdBse0e.fofrm
+tile       29   26             art\tile\Std\StdBse0h.fofrm
+tile       0    27             art\tile\Std\StdBse0f.fofrm
+tile       1    27             art\tile\Std\StdBse0g.fofrm
+tile       2    27             art\tile\Std\StdBse0f.fofrm
+tile       3    27             art\tile\Std\StdBse0c.fofrm
+tile       4    27             art\tile\Std\StdBse0c.fofrm
+tile       5    27             art\tile\Std\StdBse0d.fofrm
+tile       6    27             art\tile\Std\StdBse0b.fofrm
+tile       7    27             art\tile\Std\StdBse0c.fofrm
+tile       8    27             art\tile\Std\StdBse0g.fofrm
+tile       9    27             art\tile\Std\StdBse0h.fofrm
+tile       10   27             art\tile\Std\StdBse0g.fofrm
+tile       11   27             art\tile\Std\StdBse0h.fofrm
+tile       12   27             art\tile\Std\StdBse0e.fofrm
+tile       13   27             art\tile\Std\StdBse0d.fofrm
+tile       14   27             art\tile\Std\StdBse0d.fofrm
+tile       15   27             art\tile\Std\StdBse0c.fofrm
+tile       16   27             art\tile\Std\StdBse0f.fofrm
+tile       17   27             art\tile\Std\StdBse0d.fofrm
+tile       18   27             art\tile\Std\StdBse0b.fofrm
+tile       19   27             art\tile\Std\StdBse0h.fofrm
+tile       20   27             art\tile\Std\StdBse0a.fofrm
+tile       21   27             art\tile\Std\StdBse0b.fofrm
+tile       22   27             art\tile\Std\StdBse0g.fofrm
+tile       23   27             art\tile\Std\StdBse0f.fofrm
+tile       24   27             art\tile\Std\StdBse0c.fofrm
+tile       25   27             art\tile\Std\StdBse0e.fofrm
+tile       26   27             art\tile\Std\StdBse0d.fofrm
+tile       27   27             art\tile\Std\StdBse0d.fofrm
+tile       28   27             art\tile\Std\StdBse0e.fofrm
+tile       29   27             art\tile\Std\StdBse0g.fofrm
+tile       0    28             art\tile\Std\StdBse0e.fofrm
+tile       1    28             art\tile\Std\StdBse0a.fofrm
+tile       2    28             art\tile\Std\StdBse0a.fofrm
+tile       3    28             art\tile\Std\StdBse0e.fofrm
+tile       4    28             art\tile\Std\StdBse0g.fofrm
+tile       5    28             art\tile\Std\StdBse0e.fofrm
+tile       6    28             art\tile\Std\StdBse0a.fofrm
+tile       7    28             art\tile\Std\StdBse0a.fofrm
+tile       8    28             art\tile\Std\StdBse0h.fofrm
+tile       9    28             art\tile\Std\StdBse0h.fofrm
+tile       10   28             art\tile\Std\StdBse0b.fofrm
+tile       11   28             art\tile\Std\StdBse0b.fofrm
+tile       12   28             art\tile\Std\StdBse0g.fofrm
+tile       13   28             art\tile\Std\StdBse0g.fofrm
+tile       14   28             art\tile\Std\StdBse0h.fofrm
+tile       15   28             art\tile\Std\StdBse0a.fofrm
+tile       16   28             art\tile\Std\StdBse0c.fofrm
+tile       17   28             art\tile\Std\StdBse0c.fofrm
+tile       18   28             art\tile\Std\StdBse0c.fofrm
+tile       19   28             art\tile\Std\StdBse0h.fofrm
+tile       20   28             art\tile\Std\StdBse0d.fofrm
+tile       21   28             art\tile\Std\StdBse0e.fofrm
+tile       22   28             art\tile\Std\StdBse0h.fofrm
+tile       23   28             art\tile\Std\StdBse0h.fofrm
+tile       24   28             art\tile\Std\StdBse0e.fofrm
+tile       25   28             art\tile\Std\StdBse0f.fofrm
+tile       26   28             art\tile\Std\StdBse0c.fofrm
+tile       27   28             art\tile\Std\StdBse0a.fofrm
+tile       28   28             art\tile\Std\StdBse0f.fofrm
+tile       29   28             art\tile\Std\StdBse0e.fofrm
+tile       0    29             art\tile\Std\StdBse0e.fofrm
+tile       1    29             art\tile\Std\StdBse0g.fofrm
+tile       2    29             art\tile\Std\StdBse0f.fofrm
+tile       3    29             art\tile\Std\StdBse0g.fofrm
+tile       4    29             art\tile\Std\StdBse0b.fofrm
+tile       5    29             art\tile\Std\StdBse0h.fofrm
+tile       6    29             art\tile\Std\StdBse0a.fofrm
+tile       7    29             art\tile\Std\StdBse0b.fofrm
+tile       8    29             art\tile\Std\StdBse0f.fofrm
+tile       9    29             art\tile\Std\StdBse0h.fofrm
+tile       10   29             art\tile\Std\StdBse0d.fofrm
+tile       11   29             art\tile\Std\StdBse0e.fofrm
+tile       12   29             art\tile\Std\StdBse0f.fofrm
+tile       13   29             art\tile\Std\StdBse0c.fofrm
+tile       14   29             art\tile\Std\StdBse0c.fofrm
+tile       15   29             art\tile\Std\StdBse0c.fofrm
+tile       16   29             art\tile\Std\StdBse0f.fofrm
+tile       17   29             art\tile\Std\StdBse0f.fofrm
+tile       18   29             art\tile\Std\StdBse0b.fofrm
+tile       19   29             art\tile\Std\StdBse0g.fofrm
+tile       20   29             art\tile\Std\StdBse0a.fofrm
+tile       21   29             art\tile\Std\StdBse0g.fofrm
+tile       22   29             art\tile\Std\StdBse0a.fofrm
+tile       23   29             art\tile\Std\StdBse0d.fofrm
+tile       24   29             art\tile\Std\StdBse0e.fofrm
+tile       25   29             art\tile\Std\StdBse0a.fofrm
+tile       26   29             art\tile\Std\StdBse0a.fofrm
+tile       27   29             art\tile\Std\StdBse0g.fofrm
+tile       28   29             art\tile\Std\StdBse0h.fofrm
+tile       29   29             art\tile\Std\StdBse0d.fofrm
+
+[Objects]
+MapObjType           2
+ProtoId              7379
+MapX                 22
+MapY                 9
+
+MapObjType           2
+ProtoId              7381
+MapX                 21
+MapY                 9
+
+MapObjType           2
+ProtoId              7383
+MapX                 20
+MapY                 9
+
+MapObjType           2
+ProtoId              7385
+MapX                 19
+MapY                 9
+
+MapObjType           2
+ProtoId              7379
+MapX                 18
+MapY                 9
+
+MapObjType           2
+ProtoId              7381
+MapX                 17
+MapY                 9
+
+MapObjType           2
+ProtoId              7383
+MapX                 16
+MapY                 9
+
+MapObjType           2
+ProtoId              7379
+MapX                 13
+MapY                 9
+
+MapObjType           2
+ProtoId              7381
+MapX                 14
+MapY                 9
+
+MapObjType           2
+ProtoId              7383
+MapX                 12
+MapY                 9
+
+MapObjType           2
+ProtoId              7380
+MapX                 10
+MapY                 12
+
+MapObjType           2
+ProtoId              7382
+MapX                 10
+MapY                 15
+
+MapObjType           2
+ProtoId              7384
+MapX                 10
+MapY                 13
+
+MapObjType           2
+ProtoId              7380
+MapX                 10
+MapY                 14
+
+MapObjType           2
+ProtoId              7382
+MapX                 10
+MapY                 17
+
+MapObjType           2
+ProtoId              7378
+MapX                 10
+MapY                 18
+
+MapObjType           2
+ProtoId              7380
+MapX                 10
+MapY                 19
+
+MapObjType           2
+ProtoId              7561
+MapX                 11
+MapY                 9
+
+MapObjType           2
+ProtoId              7568
+MapX                 10
+MapY                 10
+
+MapObjType           2
+ProtoId              7380
+MapX                 10
+MapY                 11
+
+MapObjType           2
+ProtoId              7391
+MapX                 15
+MapY                 9
+
+MapObjType           2
+ProtoId              7384
+MapX                 10
+MapY                 16
+
+MapObjType           2
+ProtoId              2150
+MapX                 11
+MapY                 15
+
+MapObjType           2
+ProtoId              3049
+MapX                 12
+MapY                 15
+
+MapObjType           2
+ProtoId              2890
+MapX                 12
+MapY                 14
+OffsetX              73
+OffsetY              -3
+
+MapObjType           2
+ProtoId              3195
+MapX                 11
+MapY                 13
+OffsetX              13
+OffsetY              -20
+
+MapObjType           2
+ProtoId              3195
+MapX                 11
+MapY                 17
+OffsetX              -24
+OffsetY              -39
+
+MapObjType           2
+ProtoId              3195
+MapX                 19
+MapY                 9
+OffsetX              23
+
+MapObjType           1
+ProtoId              16879
+MapX                 15
+MapY                 9
+OffsetX              -10
+
+MapObjType           2
+ProtoId              2114
+MapX                 11
+MapY                 11
+OffsetX              -8
+OffsetY              6
+
+MapObjType           0
+ProtoId              508
+MapX                 15
+MapY                 15
+Critter_Cond         1
+Critter_Anim1        0
+Critter_Anim2        0
+Critter_ParamIndex0  ST_DIALOG_ID
+Critter_ParamValue0  0
+Critter_ParamIndex1  ST_AI_ID
+Critter_ParamValue1  133
+Critter_ParamIndex2  ST_BAG_ID
+Critter_ParamValue2  0
+Critter_ParamIndex3  ST_TEAM_ID
+Critter_ParamValue3  0
+Critter_ParamIndex4  ST_NPC_ROLE
+Critter_ParamValue4  0
+Critter_ParamIndex5  ST_REPLICATION_TIME
+Critter_ParamValue5  0
+
+MapObjType           0
+ProtoId              509
+MapX                 14
+MapY                 10
+Dir                  2
+Critter_Cond         1
+Critter_Anim1        0
+Critter_Anim2        0
+Critter_ParamIndex0  ST_DIALOG_ID
+Critter_ParamValue0  0
+Critter_ParamIndex1  ST_AI_ID
+Critter_ParamValue1  133
+Critter_ParamIndex2  ST_BAG_ID
+Critter_ParamValue2  0
+Critter_ParamIndex3  ST_TEAM_ID
+Critter_ParamValue3  0
+Critter_ParamIndex4  ST_NPC_ROLE
+Critter_ParamValue4  0
+Critter_ParamIndex5  ST_REPLICATION_TIME
+Critter_ParamValue5  0
+
+MapObjType           0
+ProtoId              509
+MapX                 16
+MapY                 10
+Dir                  2
+Critter_Cond         1
+Critter_Anim1        0
+Critter_Anim2        0
+Critter_ParamIndex0  ST_DIALOG_ID
+Critter_ParamValue0  0
+Critter_ParamIndex1  ST_AI_ID
+Critter_ParamValue1  133
+Critter_ParamIndex2  ST_BAG_ID
+Critter_ParamValue2  0
+Critter_ParamIndex3  ST_TEAM_ID
+Critter_ParamValue3  0
+Critter_ParamIndex4  ST_NPC_ROLE
+Critter_ParamValue4  0
+Critter_ParamIndex5  ST_REPLICATION_TIME
+Critter_ParamValue5  0
+
+MapObjType           0
+ProtoId              511
+MapX                 11
+MapY                 14
+Dir                  4
+Critter_Cond         1
+Critter_Anim1        0
+Critter_Anim2        0
+Critter_ParamIndex0  ST_DIALOG_ID
+Critter_ParamValue0  0
+Critter_ParamIndex1  ST_AI_ID
+Critter_ParamValue1  133
+Critter_ParamIndex2  ST_BAG_ID
+Critter_ParamValue2  0
+Critter_ParamIndex3  ST_TEAM_ID
+Critter_ParamValue3  0
+Critter_ParamIndex4  ST_NPC_ROLE
+Critter_ParamValue4  0
+Critter_ParamIndex5  ST_REPLICATION_TIME
+Critter_ParamValue5  0
+
+

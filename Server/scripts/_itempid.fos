@@ -1,0 +1,164 @@
+#ifndef __ITEM_PID__
+#define __ITEM_PID__
+
+/******************************************************************
+***************       Armor                         ***************
+******************************************************************/
+
+#define PID_LEATHER_ARMOR       ( 1121 )
+#define PID_CHAIN_ARMOR         ( 1122 )
+#define PID_TUXEDO              ( 1101 )
+#define PID_BARBARIAN           ( 1102 )
+#define PID_CYLINDER            ( 1110 )
+#define PID_CITY_BOOTS          ( 1111 )
+#define PID_COWBOY_HAT          ( 1112 )
+#define PID_CAP                 ( 1113 )
+#define PID_BOWLER_HAT          ( 1114 )
+#define PID_BASIC_SHIELD        ( 1115 )
+#define PID_SKULL_HELMET        ( 1116 )
+#define PID_BROWN_SYRT          ( 1117 )
+#define PID_RED_SYRT            ( 1118 )
+#define PID_WHITE_SYRT          ( 1119 )
+#define PID_TEST_SUIT           ( 1120 )
+#define PID_RAG_WHITE           ( 1123 )
+#define PID_RAG_GREEN           ( 1124 )
+#define PID_RAG_RED             ( 1125 )
+#define PID_RAG_BLACK           ( 1126 )
+#define PID_BIG_TOP_HAT         ( 1127 )
+#define PID_COWBOY_HAT_WIDE     ( 1128 )
+#define PID_FUR_HAT             ( 1129 )
+#define PID_SANTA               ( 1130 )
+#define PID_STRAW_HAT           ( 1131 )
+#define PID_TRICORNE            ( 1132 )
+#define PID_ACADEMIC_CAP        ( 1133 )
+#define PID_JACKET_BLACK        ( 1134 )
+#define PID_JACKET_BLUE         ( 1135 )
+#define PID_JACKET_BROWN        ( 1136 )
+#define PID_JACKET_GREEN        ( 1137 )
+#define PID_ROBE                ( 1138 )
+
+/******************************************************************
+***************       Weapons                       ***************
+******************************************************************/
+
+// Small Guns
+// Pistols
+#define PID_NORMAL_REVOLVER     ( 1033 )
+#define PID_FLINT_PISTOL        ( 1038 )
+
+// Rifles
+#define PID_SNIPER_CROSSBOW     ( 1036 )
+#define PID_CROSSBOW            ( 1037 )
+#define PID_RIFLE               ( 1041 )
+
+// Shotguns
+
+// Pistol-machine gun
+
+// Big guns
+
+// Energo
+// Laser
+
+// Plasma
+
+// Pulse
+
+// Throwing
+// Grenade
+
+// Other
+
+// Melee
+// Cutting
+#define PID_2HSWORD_RED         ( 1034 )
+#define PID_POOR_AXE            ( 1035 )
+#define PID_SKEWER              ( 1039 )
+#define PID_MAKEDONIAN_SWORD    ( 1040 )
+
+// Pricking
+
+// Shock
+
+// Electric
+
+// Unarmed
+
+// Special
+
+/******************************************************************
+***************       Ammo                          ***************
+******************************************************************/
+
+#define PID_BULLET              ( 29 )
+#define PID_ARROW               ( 31 )
+#define PID_FUEL                ( 32 )
+#define PID_BATTERY             ( 39 )
+
+/******************************************************************
+***************       Drugs                         ***************
+******************************************************************/
+
+
+/******************************************************************
+***************       Container                     ***************
+******************************************************************/
+
+
+/******************************************************************
+***************       Keys                          ***************
+******************************************************************/
+
+
+/******************************************************************
+***************       Misc.                         ***************
+******************************************************************/
+
+// Money
+#define PID_BOTTLE_CAPS         ( 41 )
+
+// Tools
+// Tech
+
+// Medical
+
+// Other
+
+// Special
+
+
+// Books
+
+// Other
+
+// Special
+
+// Special keys
+
+// Holodisks
+
+// Other, Inventory pic n/a
+
+// Traps, active see in Misc2
+
+// Special
+
+// Cars
+
+// Traps
+
+// Manufacture, Still
+
+// Barricades stuff
+
+// Other
+#define PID_INVISIBLE_BLOCK     ( 820 )
+
+/******************************************************************
+***************       Effects                       ***************
+******************************************************************/
+
+// Explode
+// Flying
+
+#endif  // __ITEM_PID__

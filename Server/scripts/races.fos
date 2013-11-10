@@ -1,0 +1,125 @@
+#include "_macros.fos"
+#include "_defines.fos"
+// Расы:
+#ifndef __CLIENT
+void SetHumanRace( Critter& player )
+{
+    int crType = ( player.Stat[ ST_GENDER ] == GENDER_MALE ? CRTYPE_ARCANUM_HUMAN_MALE : CRTYPE_ARCANUM_HUMAN_FEMALE );
+    player.ChangeCrType( crType );
+    player.StatBase[ ST_BASE_CRTYPE ] = crType;
+}
+void SetDwarfRace( Critter& player )
+{
+    int crType = CRTYPE_ARCANUM_DWARF_MALE;
+    player.StatBase[ ST_GENDER ] = GENDER_MALE;
+    player.ChangeCrType( crType );
+    player.StatBase[ ST_BASE_CRTYPE ] = crType;
+}
+void SetElfRace( Critter& player )
+{
+    int crType = ( player.Stat[ ST_GENDER ] == GENDER_MALE ? CRTYPE_ARCANUM_ELF_MALE : CRTYPE_ARCANUM_HUMAN_FEMALE );
+    player.ChangeCrType( crType );
+    player.StatBase[ ST_BASE_CRTYPE ] = crType;
+}
+void SetHalfElfRace( Critter& player )
+{
+    int crType = ( player.Stat[ ST_GENDER ] == GENDER_MALE ? CRTYPE_ARCANUM_HUMAN_MALE : CRTYPE_ARCANUM_HUMAN_FEMALE );
+    player.ChangeCrType( crType );
+    player.StatBase[ ST_BASE_CRTYPE ] = crType;
+}
+void SetGnomRace( Critter& player )
+{
+    int crType = CRTYPE_ARCANUM_GNOME_MALE;
+    player.StatBase[ ST_GENDER ] = GENDER_MALE;
+    player.ChangeCrType( crType );
+    player.StatBase[ ST_BASE_CRTYPE ] = crType;
+}
+void SetHobbitRace( Critter& player )
+{
+    int crType = CRTYPE_ARCANUM_GNOME_MALE;
+    player.StatBase[ ST_GENDER ] = GENDER_MALE;
+    player.ChangeCrType( crType );
+    player.StatBase[ ST_BASE_CRTYPE ] = crType;
+}
+void SetHalfOrkRace( Critter& player )
+{
+    int crType = ( player.Stat[ ST_GENDER ] == GENDER_MALE ? CRTYPE_ARCANUM_HUMAN_MALE : CRTYPE_ARCANUM_HUMAN_FEMALE );
+    player.ChangeCrType( crType );
+    player.StatBase[ ST_BASE_CRTYPE ] = crType;
+}
+void SetHalfOgreRace( Critter& player )
+{
+    int crType = CRTYPE_ARCANUM_HALFOGRE_MALE;
+    player.StatBase[ ST_GENDER ] = GENDER_MALE;
+    player.ChangeCrType( crType );
+    player.StatBase[ ST_BASE_CRTYPE ] = crType;
+}
+void SetOrkRace( Critter& player )
+{
+    int crType = CRTYPE_ARCANUM_ORK_MALE;
+    player.StatBase[ ST_GENDER ] = GENDER_MALE;
+    player.ChangeCrType( crType );
+    player.StatBase[ ST_BASE_CRTYPE ] = crType;
+}
+#endif
+uint8 GetRaceType( uint8 race, uint8 gender )
+{
+    uint8 result;
+    if( gender == GENDER_FEMALE )
+    {
+        result = RACE_TYPE_HUMANOID;
+    }
+    else
+    {
+        switch( race )
+        {
+        case RACE_HUMAN:
+        case RACE_HALFELF:
+        case RACE_HALFORK:
+            result = RACE_TYPE_HUMANOID;
+            break;
+        case RACE_GNOME:
+        case RACE_HOBBIT:
+            result = RACE_TYPE_HOBBITOID;
+            break;
+        case RACE_HALFOGRE:
+            result = RACE_TYPE_OGREOID;
+            break;
+        case RACE_ELF:
+            result = RACE_TYPE_ELFOID;
+            break;
+        case RACE_DWARF:
+            result = RACE_TYPE_DWARFOID;
+            break;
+        case RACE_ORK:
+            result = RACE_TYPE_ORKOID;
+            break;
+        default:
+            result = RACE_TYPE_OTHER;
+        }
+    }
+    return result;
+}
+
+
+uint8 GetRaceArmorSize( uint8 raceType )
+{
+    uint8 result = 0;
+    switch( raceType )
+    {
+        case RACE_TYPE_HOBBITOID:
+        case RACE_TYPE_DWARFOID:
+            result = ARMOR_SIZE_SMALL;
+            break;
+        case RACE_TYPE_OGREOID:
+            result = ARMOR_SIZE_BIG;
+            break;
+        case RACE_TYPE_ORKOID:
+            result = ARMOR_SIZE_ORK;
+            break;
+        case RACE_TYPE_OTHER:
+            result = ARMOR_SIZE_NONE;
+            break;
+    }
+    return result;
+}

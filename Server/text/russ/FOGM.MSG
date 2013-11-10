@@ -1,0 +1,281 @@
+
+#
+# Local map
+#
+
+# Name, (pid + 1) * 10 + 0
+# Music, (pid + 1) * 10 + 5
+# Ambient, (pid + 1) * 10 + 6
+# NoLogOut, (pid + 1) * 10 + 7
+
+# Map 0, Global, base 10
+{10}{}{Глобальная карта}
+{15}{}{20car}
+{15}{}{23world}
+{16}{}{blank:100}
+
+# Map 1, base 20
+{20}{}{StartMap}
+{25}{}{}
+{26}{}{}
+
+#
+# Global map
+#
+
+# Name, (pid + 100) * 1000 + 0
+# Info, (pid + 100) * 1000 + 5
+# Location picture, (pid + 100) * 1000 + 20
+# Tab picture, (pid + 100) * 1000 + 30
+# Count entries, (pid + 100) * 1000 + 90
+# Entire X name, (pid + 100) * 1000 + 100 + X*10 + 1
+# Entire X pic x, (pid + 100) * 1000 + 100 + X*10 + 2
+# Entire X pic y, (pid + 100) * 1000 + 100 + X*10 + 3
+
+# Start Loc, pid 1, base 101000
+{101000}{}{Начальный город}
+{101005}{}{С этого все и началось.}
+
+#
+# Worldmap Encounter messages
+#
+
+{10000010}{}{Вы наткнулись на @lex who@.}
+{10000011}{}{Вы наткнулись на @lex who@ и @lex player@.}
+{10000012}{}{Вы наткнулись на @lex who@ и банду @lex player@.}
+{10000013}{}{Вы наткнулись на @lex player@.}
+{10000014}{}{Вы наткнулись на банду @lex player@.}
+{10000020}{}{Вы хотите увидеть @lex who@?}
+{10000021}{}{Вы хотите увидеть @lex who@ и @lex player@?}
+{10000022}{}{Вы хотите увидеть @lex who@ и банду @lex player@?}
+{10000023}{}{Вы хотите увидеть @lex player@?}
+{10000024}{}{Вы хотите увидеть банду @lex player@?}
+
+# Encounter Table 0
+{10030000}{}{<Особое>}
+{10030010}{}{<Особое>}
+
+# Encounter Table 1
+{10030500}{}{<Особое>}
+
+# Encounter Table 2
+{10031000}{}{<Особое>}
+
+# Encounter Table 3
+{10031500}{}{<Особое>}
+
+# Encounter Table 4
+{10032000}{}{<Особое>}
+
+# Encounter Table 5
+{10032500}{}{<Особое>}
+
+# Encounter Table 6
+{10033000}{}{<Особое>}
+
+# Encounter Table 7
+{10033500}{}{<Особое>}
+
+# Encounter Table 8
+{10034240}{}{<Особое>}
+
+# Encounter Table 9
+{10034810}{}{<Особое>}
+
+# Encounter Table 10
+{10035200}{}{<Особое>}
+
+# Encounter Table 11
+{10035890}{}{<Особое>}
+
+# Encounter Table 12
+{10036310}{}{<Особое>}
+
+# Encounter Table 13
+{10036840}{}{<Особое>}
+
+# Encounter Table 14
+{10037330}{}{<Особое>}
+
+# Encounter Table 15
+{10037740}{}{<Особое>}
+
+# Encounter Table 16
+{10038310}{}{<Особое>}
+
+# Encounter Table 17
+{10038710}{}{<Особое>}
+
+# Encounter Table 18
+{10039200}{}{<Особое>}
+
+# Encounter Table 19
+{10039760}{}{<Особое>}
+
+# Encounter Table 20
+{10040230}{}{<Особое>}
+
+# Encounter Table 21
+{10040810}{}{<Особое>}
+
+# Encounter Table 22
+{10041200}{}{<Особое>}
+
+# Encounter Table 23
+{10041780}{}{<Особое>}
+
+# Encounter Table 24
+{10042300}{}{<Особое>}
+
+# Encounter Table 25
+{10042710}{}{<Особое>}
+
+# Encounter Table 26
+{10043200}{}{<Особое>}
+
+# Encounter Table 27
+{10043780}{}{<Особое>}
+
+# Encounter Table 28
+{10044230}{}{<Особое>}
+
+# Encounter Table 29
+{10044810}{}{<Особое>}
+
+# Encounter Table 30
+{10045180}{}{<Особое>}
+
+# Encounter Table 31
+{10045820}{}{<Особое>}
+
+# Encounter Table 32
+{10046240}{}{<Особое>}
+
+# Encounter Table 33
+{10046800}{}{<Особое>}
+
+# Encounter Table 34
+{10047220}{}{<Особое>}
+
+# Encounter Table 35
+{10047800}{}{<Особое>}
+
+# Encounter Table 36
+{10048220}{}{<Особое>}
+
+# Encounter Table 37
+{10048700}{}{<Особое>}
+
+# Encounter Table 38
+{10049200}{}{<Особое>}
+
+# Encounter Table 39
+{10049780}{}{<Особое>}
+
+# Encounter Table 40
+{10050160}{}{<Особое>}
+
+# Encounter Table 41
+{10050740}{}{<Особое>}
+
+# Encounter Table 42
+{10051200}{}{<Особое>}
+
+# Encounter Table 43
+{10051610}{}{<Особое>}
+
+# Encounter Table 44
+{10052120}{}{<Особое>}
+
+# Encounter Table 45
+{10052780}{}{<Особое>}
+
+# Encounter Table 46
+{10053200}{}{<Особое>}
+
+# Encounter Table 47
+{10053670}{}{<Особое>}
+
+# Encounter Table 48
+{10054230}{}{<Особое>}
+
+# Encounter Table 49
+{10054630}{}{<Особое>}
+
+# Encounter Table 50
+{10055110}{}{<Особое>}
+
+# Encounter Table 51
+{10055780}{}{<Особое>}
+
+# Encounter Table 52
+{10056200}{}{<Особое>}
+
+# Encounter Table 53
+{10056760}{}{<Особое>}
+
+# Encounter Table 54
+{10057170}{}{<Особое>}
+
+# Encounter Table 55
+{10057650}{}{<Особое>}
+
+# Encounter Table 56
+{10058260}{}{<Особое>}
+
+# Encounter Table 57
+{10058680}{}{<Особое>}
+
+# Encounter Table 58
+{10059180}{}{<Особое>}
+
+# Encounter Table 59
+{10059680}{}{<Особое>}
+
+# Encounter Table 60
+{10060160}{}{<Особое>}
+
+# Encounter Table 61
+{10060770}{}{<Особое>}
+
+# Encounter Table 62
+{10061290}{}{<Особое>}
+
+# Encounter Table 63
+{10061680}{}{<Особое>}
+
+# Encounter Table 64
+{10062230}{}{<Особое>}
+
+# Encounter Table 65
+{10062640}{}{<Особое>}
+
+# Encounter Table 66
+{10063250}{}{<Особое>}
+
+# Encounter Table 67
+{10063660}{}{<Особое>}
+
+# Encounter Table 68
+{10064130}{}{<Особое>}
+
+# Encounter Table 69
+{10064720}{}{<Особое>}
+
+# Encounter Table 70
+{10065310}{}{<Особое>}
+
+# Encounter Table 71
+{10065720}{}{<Особое>}
+
+# Encounter Table 72
+{10066200}{}{<Особое>}
+
+# Encounter Table 73
+{10066770}{}{<Особое>}
+
+# Encounter Table 74
+{10067150}{}{<Особое>}
+
+# Encounter Table 75
+{10067740}{}{<Особое>}

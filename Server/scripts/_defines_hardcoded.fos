@@ -1,0 +1,81 @@
+#define ST_STRENGTH_DONT_USE                     ( 0 ) // Hardcoded
+#define ST_PERCEPTION_DONT_USE                   ( 1 ) // Hardcoded
+#define ST_ENDURANCE_DONT_USE                    ( 2 ) // Hardcoded
+#define ST_CHARISMA_DONT_USE                     ( 3 ) // Hardcoded
+#define ST_INTELLECT_DONT_USE                    ( 4 ) // Hardcoded
+#define ST_AGILITY_DONT_USE                      ( 5 ) // Hardcoded
+#define ST_LUCK_DONT_USE                         ( 6 ) // Hardcoded
+#define ST_MAX_LIFE                              ( 7 )  // Hardcoded
+#define ST_ACTION_POINTS                         ( 8 )  // Hardcoded
+#define ST_ARMOR_CLASS                           ( 9 )  // Hardcoded
+#define ST_MELEE_DAMAGE                          ( 10 ) // Hardcoded
+#define ST_CARRY_WEIGHT                          ( 11 ) // Hardcoded
+#define ST_SEQUENCE                              ( 12 ) // Hardcoded
+#define ST_HEALING_RATE                          ( 13 ) // Hardcoded
+#define ST_CRITICAL_CHANCE                       ( 14 ) // Hardcoded
+
+#define ST_NORMAL_RESIST                         ( 23 ) // Hardcoded
+
+#define ST_RADIATION_RESISTANCE                  ( 30 ) // Hardcoded
+#define ST_POISON_RESISTANCE                     ( 31 ) // Hardcoded
+
+#define ST_AGE                                   ( 70 ) // Hardcoded
+#define ST_GENDER                                ( 71 ) // Hardcoded
+#define ST_CURRENT_HP                            ( 72 ) // Hardcoded
+#define ST_POISONING_LEVEL                       ( 73 ) // Hardcoded
+#define ST_RADIATION_LEVEL                       ( 74 ) // Hardcoded
+#define ST_CURRENT_AP                            ( 75 ) // Hardcoded
+#define ST_EXPERIENCE                            ( 76 ) // Hardcoded
+#define ST_LEVEL                                 ( 77 ) // Hardcoded
+#define ST_UNSPENT_SKILL_POINTS                  ( 78 ) // Hardcoded
+#define ST_UNSPENT_PERKS                         ( 79 ) // Hardcoded
+#define ST_KARMA                                 ( 80 ) // Hardcoded
+#define ST_FOLLOW_CRIT                           ( 81 ) // Hardcoded
+#define ST_REPLICATION_MONEY                     ( 82 ) // Hardcoded
+#define ST_REPLICATION_COUNT                     ( 83 ) // Hardcoded
+#define ST_REPLICATION_TIME                      ( 84 ) // Hardcoded
+#define ST_REPLICATION_COST                      ( 85 ) // Hardcoded
+#define ST_TURN_BASED_AC                         ( 86 ) // Hardcoded
+#define ST_MAX_MOVE_AP                           ( 87 ) // Hardcoded
+#define ST_MOVE_AP                               ( 88 ) // Hardcoded
+#define ST_NPC_ROLE                              ( 89 ) // Hardcoded
+
+#define ST_BONUS_LOOK                            ( 101 ) // Hardcoded
+#define ST_HANDS_ITEM_AND_MODE                   ( 102 ) // Hardcoded
+#define ST_FREE_BARTER_PLAYER                    ( 103 ) // Hardcoded
+#define ST_DIALOG_ID                             ( 104 ) // Hardcoded
+#define ST_AI_ID                                 ( 105 ) // Hardcoded
+#define ST_TEAM_ID                               ( 106 ) // Hardcoded
+#define ST_BAG_ID                                ( 107 ) // Hardcoded
+
+#define ST_LAST_WEAPON_ID                        ( 110 ) // Hardcoded
+
+#define ST_BASE_CRTYPE                           ( 112 ) // Hardcoded
+
+#define ST_TALK_DISTANCE                         ( 115 ) // Hardcoded, if zero than taked __TalkDistance
+#define ST_SCALE_FACTOR                          ( 116 ) // Hardcoded
+#define ST_WALK_TIME                             ( 117 ) // Hardcoded
+#define ST_RUN_TIME                              ( 118 ) // Hardcoded
+#define ST_MAX_TALKERS                           ( 119 ) // Hardcoded
+
+// / Skills
+#define SK_UNARMED_DONT_USE                      ( 203 ) // Hardcoded
+#define SK_FIRST_AID_DONT_USE                    ( 206 ) // Hardcoded
+#define SK_DOCTOR_DONT_USE                       ( 207 ) // Hardcoded
+#define SK_SNEAK_DONT_USE                        ( 208 ) // Hardcoded
+#define SK_LOCKPICK_DONT_USE                     ( 209 ) // Hardcoded
+#define SK_STEAL_DONT_USE                        ( 210 ) // Hardcoded
+#define SK_TRAPS_DONT_USE                        ( 211 ) // Hardcoded
+#define SK_SCIENCE_DONT_USE                      ( 212 ) // Hardcoded
+#define SK_REPAIR_DONT_USE                       ( 213 ) // Hardcoded
+#define SK_SPEECH_DONT_USE                       ( 214 ) // Hardcoded
+#define SK_BARTER_DONT_USE                       ( 215 ) // Hardcoded
+
+// 218..225
+
+// / Tag skills
+#define TAG_SKILL1                               ( 226 ) // Hardcoded
+#define TAG_SKILL2                               ( 227 ) // Hardcoded
+#define TAG_SKILL3                               ( 228 ) // Hardcoded
+#define TAG_SKILL4                               ( 229 ) // Hardcoded
+

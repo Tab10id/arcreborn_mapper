@@ -1,0 +1,167 @@
+/*
+Drt
+  Bg1
+    Bg2
+      Bog
+  Blk
+  Dg1
+  Dst
+  Fog
+  Grs
+  Prh
+  Rck
+    Snw
+      Ice
+  Rok
+  Sod
+  St1
+  Sw1
+    Sw2
+      Sw3
+        Swr
+          Dwr
+            Dks
+          Ssd
+            Dis
+              Jdt
+                Jgr
+              Tla
+  Sxw
+  Tdt
+  Ts1
+    Ts2
+  Tst
+  Vdr
+    Vwk
+  Wd3
+  Wk1
+  Wk2
+*/
+const uint8[] countsDrtBg1 = { 4, 8, 4, 8, 4, 2, 4, 2, 1, 1, 4, 4, 8, 8 };
+const uint8[] countsBg1Bg2 = { 4, 7, 4, 8, 4, 2, 4, 2, 1, 1, 4, 4, 7, 8 };
+const uint8[] countsDrtBlk = { 2, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1 };
+const uint8[] countsBg2Bog = { 4, 8, 4, 8, 4, 2, 4, 2, 1, 1, 4, 4, 8, 8 };
+const uint8[] countsDrtDg1 = { 4, 8, 4, 8, 4, 2, 4, 2, 1, 1, 4, 4, 8, 8 };
+const uint8[] countsSsdDis = { 4, 7, 2, 7, 4, 2, 2, 2, 1, 1, 2, 2, 7, 7 };
+const uint8[] countsDwrDks = { 2, 4, 1, 6, 2, 1, 1, 1, 1, 1, 1, 1, 6, 6 };
+const uint8[] countsDrtDst = { 2, 7, 1, 7, 2, 1, 2, 1, 1, 1, 2, 1, 7, 7 };
+const uint8[] countsSwrDwr = { 4, 3, 3, 3, 4, 2, 3, 2, 1, 1, 3, 3, 3, 3 };
+const uint8[] countsDrtFog = { 2, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1 };
+const uint8[] countsDrtGrs = { 4, 8, 2, 8, 4, 2, 2, 2, 1, 1, 2, 2, 8, 8 };
+const uint8[] countsSnwIce = { 4, 4, 2, 4, 4, 1, 1, 1, 1, 1, 1, 2, 4, 4 };
+const uint8[] countsDisJdt = { 2, 8, 1, 8, 2, 1, 2, 1, 1, 1, 2, 1, 8, 8 };
+const uint8[] countsJdtJgr = { 4, 8, 2, 8, 4, 2, 2, 2, 1, 1, 2, 2, 8, 8 };
+const uint8[] countsDrtPrh = { 2, 4, 1, 6, 2, 1, 1, 1, 1, 1, 1, 1, 6, 6 };
+const uint8[] countsDrtRck = { 4, 8, 4, 8, 4, 2, 4, 2, 1, 1, 4, 4, 8, 8 };
+const uint8[] countsDrtRok = { 2, 5, 1, 5, 2, 1, 2, 1, 1, 1, 2, 1, 5, 5 };
+const uint8[] countsRckSnw = { 4, 8, 4, 8, 4, 2, 4, 2, 1, 1, 4, 4, 8, 8 };
+const uint8[] countsDrtSod = { 2, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1 };
+const uint8[] countsSwrSsd = { 4, 5, 2, 5, 4, 2, 2, 2, 1, 1, 2, 2, 5, 5 };
+const uint8[] countsDrtSt1 = { 2, 8, 1, 8, 2, 1, 1, 1, 1, 1, 1, 1, 8, 8 };
+const uint8[] countsDrtSw1 = { 4, 8, 4, 8, 4, 2, 4, 2, 1, 1, 4, 4, 8, 8 };
+const uint8[] countsSw1Sw2 = { 4, 8, 4, 8, 4, 2, 4, 2, 1, 1, 4, 4, 8, 8 };
+const uint8[] countsSw2Sw3 = { 4, 8, 4, 8, 4, 2, 4, 2, 1, 1, 4, 4, 8, 8 };
+const uint8[] countsSw3Swr = { 6, 8, 4, 8, 6, 2, 4, 2, 1, 1, 4, 4, 8, 8 };
+const uint8[] countsDrtSxw = { 2, 5, 1, 7, 2, 1, 1, 1, 1, 1, 1, 1, 5, 7 };
+const uint8[] countsDrtTdt = { 4, 4, 1, 4, 4, 1, 1, 1, 1, 1, 1, 1, 4, 4 };
+const uint8[] countsDisTla = { 4, 4, 2, 4, 4, 1, 1, 2, 1, 1, 1, 2, 4, 4 };
+const uint8[] countsDrtTs1 = { 4, 5, 2, 5, 4, 1, 1, 1, 1, 1, 1, 2, 5, 5 };
+const uint8[] countsTs1Ts2 = { 4, 5, 2, 5, 4, 4, 1, 1, 1, 1, 1, 2, 5, 5 };
+const uint8[] countsDrtTst = { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 };
+const uint8[] countsDrtVdr = { 2, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1 };
+const uint8[] countsVdrVwk = { 4, 4, 2, 4, 4, 1, 1, 1, 1, 1, 1, 2, 4, 4 };
+const uint8[] countsDrtWd3 = { 2, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1 };
+const uint8[] countsDrtWk1 = { 2, 5, 1, 5, 2, 1, 1, 1, 1, 1, 1, 1, 5, 5 };
+const uint8[] countsDrtWk2 = { 2, 8, 1, 8, 2, 1, 1, 1, 1, 1, 1, 1, 8, 8 };
+
+TileSets.insertLast( CTileSet( "Drt", 4 ) );
+TileSets.insertLast( CTileSet( "Bg1", 2 ) );
+TileSets[ TileSets.length() - 1 ].SetParent( "Drt", countsDrtBg1 );
+TileSets.insertLast( CTileSet( "Bg2", 1 ) );
+TileSets[ TileSets.length() - 1 ].SetParent( "Bg1", countsBg1Bg2 );
+TileSets.insertLast( CTileSet( "Blk", 1 ) );
+TileSets[ TileSets.length() - 1 ].SetParent( "Drt", countsDrtBlk );
+TileSets.insertLast( CTileSet( "Bog", 8 ) );
+TileSets[ TileSets.length() - 1 ].SetParent( "Bg2", countsBg2Bog );
+TileSets.insertLast( CTileSet( "Dg1", 8 ) );
+TileSets[ TileSets.length() - 1 ].SetParent( "Drt", countsDrtDg1 );
+TileSets.insertLast( CTileSet( "Dis", 8 ) );
+TileSets[ TileSets.length() - 1 ].SetParent( "Ssd", countsSsdDis );
+TileSets.insertLast( CTileSet( "Dks", 8 ) );
+TileSets[ TileSets.length() - 1 ].SetParent( "Dwr", countsDwrDks );
+TileSets.insertLast( CTileSet( "Dst", 8 ) );
+TileSets[ TileSets.length() - 1 ].SetParent( "Drt", countsDrtDst );
+TileSets.insertLast( CTileSet( "Dwr", 8 ) );
+TileSets[ TileSets.length() - 1 ].SetParent( "Swr", countsSwrDwr );
+TileSets.insertLast( CTileSet( "Fog", 1 ) );
+TileSets[ TileSets.length() - 1 ].SetParent( "Drt", countsDrtFog );
+TileSets.insertLast( CTileSet( "Grs", 8 ) );
+TileSets[ TileSets.length() - 1 ].SetParent( "Drt", countsDrtGrs );
+TileSets.insertLast( CTileSet( "Ice", 8 ) );
+TileSets[ TileSets.length() - 1 ].SetParent( "Snw", countsSnwIce );
+TileSets.insertLast( CTileSet( "Jdt", 8 ) );
+TileSets[ TileSets.length() - 1 ].SetParent( "Dis", countsDisJdt );
+TileSets.insertLast( CTileSet( "Jgr", 8 ) );
+TileSets[ TileSets.length() - 1 ].SetParent( "Jdt", countsJdtJgr );
+TileSets.insertLast( CTileSet( "Prh", 8 ) );
+TileSets[ TileSets.length() - 1 ].SetParent( "Drt", countsDrtPrh );
+TileSets.insertLast( CTileSet( "Rck", 8 ) );
+TileSets[ TileSets.length() - 1 ].SetParent( "Drt", countsDrtRck );
+TileSets.insertLast( CTileSet( "Rok", 8 ) );
+TileSets[ TileSets.length() - 1 ].SetParent( "Drt", countsDrtRok );
+TileSets.insertLast( CTileSet( "Snw", 8 ) );
+TileSets[ TileSets.length() - 1 ].SetParent( "Rck", countsRckSnw );
+TileSets.insertLast( CTileSet( "Sod", 8 ) );
+TileSets[ TileSets.length() - 1 ].SetParent( "Drt", countsDrtSod );
+TileSets.insertLast( CTileSet( "Ssd", 8 ) );
+TileSets[ TileSets.length() - 1 ].SetParent( "Swr", countsSwrSsd );
+TileSets.insertLast( CTileSet( "St1", 8 ) );
+TileSets[ TileSets.length() - 1 ].SetParent( "Drt", countsDrtSt1 );
+TileSets.insertLast( CTileSet( "Sw1", 2 ) );
+TileSets[ TileSets.length() - 1 ].SetParent( "Drt", countsDrtSw1 );
+TileSets.insertLast( CTileSet( "Sw2", 2 ) );
+TileSets[ TileSets.length() - 1 ].SetParent( "Sw1", countsSw1Sw2 );
+TileSets.insertLast( CTileSet( "Sw3", 2 ) );
+TileSets[ TileSets.length() - 1 ].SetParent( "Sw2", countsSw2Sw3 );
+TileSets.insertLast( CTileSet( "Swr", 8 ) );
+TileSets[ TileSets.length() - 1 ].SetParent( "Sw3", countsSw3Swr );
+TileSets.insertLast( CTileSet( "Sxw", 8 ) );
+TileSets[ TileSets.length() - 1 ].SetParent( "Drt", countsDrtSxw );
+TileSets.insertLast( CTileSet( "Tdt", 8 ) );
+TileSets[ TileSets.length() - 1 ].SetParent( "Drt", countsDrtTdt );
+TileSets.insertLast( CTileSet( "Tla", 8 ) );
+TileSets[ TileSets.length() - 1 ].SetParent( "Dis", countsDisTla );
+TileSets.insertLast( CTileSet( "Ts1", 8 ) );
+TileSets[ TileSets.length() - 1 ].SetParent( "Drt", countsDrtTs1 );
+TileSets.insertLast( CTileSet( "Ts2", 8 ) );
+TileSets[ TileSets.length() - 1 ].SetParent( "Ts1", countsTs1Ts2 );
+TileSets.insertLast( CTileSet( "Tst", 1 ) );
+TileSets[ TileSets.length() - 1 ].SetParent( "Drt", countsDrtTst );
+TileSets.insertLast( CTileSet( "Vdr", 8 ) );
+TileSets[ TileSets.length() - 1 ].SetParent( "Drt", countsDrtVdr );
+TileSets.insertLast( CTileSet( "Vwk", 8 ) );
+TileSets[ TileSets.length() - 1 ].SetParent( "Vdr", countsVdrVwk );
+TileSets.insertLast( CTileSet( "Wd3", 8 ) );
+TileSets[ TileSets.length() - 1 ].SetParent( "Drt", countsDrtWd3 );
+TileSets.insertLast( CTileSet( "Wk1", 8 ) );
+TileSets[ TileSets.length() - 1 ].SetParent( "Drt", countsDrtWk1 );
+TileSets.insertLast( CTileSet( "Wk2", 8 ) );
+TileSets[ TileSets.length() - 1 ].SetParent( "Drt", countsDrtWk2 );
+
+TileSets.insertLast( CTileSet( "Fl1", 4 ) );
+TileSets.insertLast( CTileSet( "Wod", 4 ) );
+TileSets.insertLast( CTileSet( "Dn1", 8 ) );
+TileSets.insertLast( CTileSet( "Wi1", 8 ) );
+TileSets.insertLast( CTileSet( "Dn2", 8 ) );
+TileSets.insertLast( CTileSet( "Cf1", 8 ) );
+TileSets.insertLast( CTileSet( "Wd1", 8 ) );
+TileSets.insertLast( CTileSet( "Sew", 8 ) );
+TileSets.insertLast( CTileSet( "Wd2", 8 ) );
+TileSets.insertLast( CTileSet( "Ill", 1 ) );
+TileSets.insertLast( CTileSet( "Dir", 4 ) );
+TileSets.insertLast( CTileSet( "Cf2", 8 ) );
+TileSets.insertLast( CTileSet( "Std", 8 ) );
+TileSets.insertLast( CTileSet( "Vfl", 9 ) );
+TileSets.insertLast( CTileSet( "Jin", 8 ) );
+
+TileSets.insertLast( CTileSet( "blank", 0 ) );

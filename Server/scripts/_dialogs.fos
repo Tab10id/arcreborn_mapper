@@ -1,0 +1,69 @@
+#ifndef __DIALOGS__
+#define __DIALOGS__
+
+// РјР°СЃСЃРѕРІРєР°
+#define DIALOG_all_default                   ( 10 )
+#define DIALOG_all_molch_brodjagi            ( 11 )
+#define DIALOG_all_molch_avanturisty         ( 12 )
+#define DIALOG_gc_molch_m	                 ( 13 )
+#define DIALOG_gc_molch_fm	                 ( 14 )
+#define DIALOG_all_molch_magi	             ( 15 )
+#define DIALOG_all_molch_naiomniki	         ( 16 )
+#define DIALOG_all_molch_nishiy	             ( 17 )
+#define DIALOG_all_molch_ohrana	             ( 18 )
+#define DIALOG_all_molch_pastuhi	         ( 19 )
+#define DIALOG_all_molch_pianici	         ( 20 )
+#define DIALOG_all_molch_podmastere	         ( 21 )
+#define DIALOG_all_molch_predprinimateli	 ( 22 )
+#define DIALOG_all_molch_rabochie	         ( 23 )
+#define DIALOG_all_molch_raby	             ( 24 )
+#define DIALOG_all_molch_solder	             ( 25 )
+#define DIALOG_ted_molch_m	                 ( 26 )
+#define DIALOG_ted_molch_fm	                 ( 27 )
+#define DIALOG_ver_molch_m	                 ( 28 )
+#define DIALOG_ver_molch_fm	                 ( 29 )
+
+//РіР»РµСЂРёРЅ
+#define DIALOG_gc_brayan	                 ( 100 )
+#define DIALOG_gc_charls	                 ( 101 )
+#define DIALOG_gc_djon		                 ( 102 )
+#define DIALOG_gc_embrous	                 ( 103 )
+#define DIALOG_gc_enn	               	 	 ( 104 )
+#define DIALOG_gc_eshly	                	 ( 105 )
+#define DIALOG_gc_manfred	                 ( 106 )
+#define DIALOG_gc_rob	               		 ( 107 )
+#define DIALOG_gc_rodger	                 ( 108 )
+#define DIALOG_gc_udjin	        	         ( 109 )
+#define DIALOG_gc_yaitman	                 ( 110 )
+#define DIALOG_gc_charli	                 ( 111 )
+#define DIALOG_gc_matthew	                 ( 112 )
+
+
+//С‚РµРґР»СѓРє
+#define DIALOG_ted_arlen	                 ( 200 )
+#define DIALOG_ted_desteny	                 ( 201 )
+#define DIALOG_ted_entony	                 ( 202 )
+#define DIALOG_ted_gabriel	                 ( 203 )
+#define DIALOG_ted_lesly	                 ( 204 )
+#define DIALOG_ted_tak		                 ( 205 )
+
+//РІРµСЂР»РёРЅРіС‚РѕРЅ
+#define DIALOG_ver_captain_guard	         ( 300 )
+#define DIALOG_ver_chahter			         ( 301 )
+#define DIALOG_ver_charly			         ( 302 )
+#define DIALOG_ver_darrel			         ( 303 )
+#define DIALOG_ver_garry			         ( 304 )
+#define DIALOG_ver_jekson_liv		         ( 305 )
+#define DIALOG_ver_jekson_san		         ( 306 )
+#define DIALOG_ver_prostitute		         ( 307 )
+#define DIALOG_ver_stubby			         ( 308 )
+#define DIALOG_ver_tomas			         ( 309 )
+#define DIALOG_ver_yitny		   		     ( 310 )
+
+
+
+
+
+
+
+#endif // __DIALOGS__
