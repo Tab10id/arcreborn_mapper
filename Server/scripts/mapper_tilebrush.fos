@@ -12,6 +12,7 @@ uint        CurrentTileset = 31;
 uint16      LastHexX = 0;
 uint16      LastHexY = 0;
 MapperMap@  Map = null;
+const string[] Postfixes = {"0","1","3","2","5","a","4","b","c","d","9","8","e","7","6"};
 
 void DrawFullTileSet()
 {
@@ -56,8 +57,9 @@ class CTilesMix {
     CTileSet@ ChildTileSet;
     uint8[] DirMaxStates = { 6, 3, 9, 12 };
     uint8 State;
+    bool Inverted;
 
-    CTilesMix( int8 masterTS_idx, int8 slaveTS_idx, uint8 state = 0)
+    CTilesMix( int8 masterTS_idx, int8 slaveTS_idx, uint8 state = 0, bool inverted = false)
     {
         if ( masterTS_idx != -1 )
         {
@@ -68,13 +70,14 @@ class CTilesMix {
             @ChildTileSet = TileSets[ slaveTS_idx ];
         }
         State = state;
+        Inverted = inverted;
     }
 
     uint GetTileNameHash()
     {
         if ( State == 0 or State == 16 )
         {
-            CTileSet@ tileSet = State == 0 ? BaseTileSet : BaseTileSet;
+            CTileSet@ tileSet = State == 0 ? BaseTileSet : ChildTileSet;
             return tileSet.GetTileBaseNameHash();
         }
         else
@@ -91,15 +94,15 @@ class CTilesMix {
         {
             slaveTileSet = ChildTileSet.Name;
         }
-        string[] indexes = { "a", "b", "c", "d", "e", "f", "g", "h" };
-        string[] letIndexes = { "1","2","3","4","5","6","7","8","9","a","b","c","d","e" };
-        uint8[] stateIndexPos = { 0, 2, 1, 5, 3, 13, 12, 10, 9, 4, 6, 7, 8, 11 };
-        uint8[] counts = GetConnectCounts( slaveTileSet );
+        const string[] indexes = { "a", "b", "c", "d", "e", "f", "g", "h" };
+        const uint8[] stateIndexPos = { 0, 2, 1, 4, 9, 3, 10, 11, 12, 8, 7, 13, 6, 5 };
+        const uint8[] counts = GetConnectCounts( slaveTileSet );
         if ( State > 0 and State < 15 )
         {
             uint8 idx = stateIndexPos[State - 1];
-            string postfix = letIndexes[idx] + indexes[Random( 0, counts[ idx ] - 1 )];
+            string postfix = Postfixes[State] + indexes[Random( 0, counts[ idx ] - 1 )];
             string combineName = mainTileSet + slaveTileSet;
+            Log( "art\\tile\\" + mainTileSet + "\\" + combineName + postfix + ".fofrm" );
             return GetStrHash( "art\\tile\\" + mainTileSet + "\\" + combineName + postfix + ".fofrm" );
         }
         else
@@ -113,30 +116,35 @@ class CTilesMix {
     {
         Map.DeleteTile( hexX, hexY, false, 0 );
         Map.AddTile( hexX, hexY, 0, 0, 0, false, GetTileNameHash() );
-        for ( uint8 dir = 0; dir < 1; dir++ ) // TODO
+        for ( uint8 dir = 0; dir < 3; dir++ ) // TODO: Для теста расчет только в одном направлении
         {
             uint16 newHexX = hexX;
             uint16 newHexY = hexY;
             MoveHexByDir(newHexX, newHexY, dir * 2, 1);
-            if( DrawNeeded( newHexX, newHexY, dir ) )
+            if( newHexX < Map.Width and newHexY < Map.Height )
             {
-                CTilesMix@ newTilesMix = GenNewTilesMix( newHexX, newHexY, dir );
-                newTilesMix.DrawTileMix( newHexX, newHexY );
+                if( DrawNeeded( newHexX, newHexY, dir ) )
+                {
+                    CTilesMix@ newTilesMix = GenNewTilesMix( newHexX, newHexY, dir );
+                    if(valid(newTilesMix)) {
+                        newTilesMix.DrawTileMix( newHexX, newHexY );
+                    }
+                }
             }
         }
     }
 
     bool DrawNeeded( uint16 hexX, uint16 hexY, uint8 dir )
     {
-        CTilesMix@ newTile = GenTilesMixByHex( hexX, hexY );
+        CTilesMix@ currentTilesMix = GenTilesMixByHex( hexX, hexY );
         MoveHexByDir( hexX, hexY, ( dir * 2 + 4 ) % 8, 1 );
-        CTilesMix@ oldTile = GenTilesMixByHex( hexX, hexY );
-        if( !valid(newTile) or !valid(oldTile) )
+        CTilesMix@ processedTilesMix = GenTilesMixByHex( hexX, hexY );
+        if( !valid(currentTilesMix) or !valid(processedTilesMix) )
         {
             Log("TilesMix not created");
             return true;
         }
-        if (newTile.GetTileDirName(dir) == oldTile.GetTileDirName((dir+2)%4))
+        if (currentTilesMix.GetTileDirName((dir+2)%4) == SwapNames(processedTilesMix.GetTileDirName(dir)))
         {
             return false;
         }
@@ -145,10 +153,15 @@ class CTilesMix {
             return true;
         }
     }
+    
+    string SwapNames(string names)
+    {
+        return substring(names, 3, 3) + substring(names, 0, 3);
+    }
 
     CTilesMix@ GenTilesMixByHex( uint16 hexX, uint16 hexY )
     {
-        string[] names = GetTilesMixName( hexX, hexY );
+        const string@[] names = GetTilesMixName( hexX, hexY );
         if( names.length() != 3)
         {
             Log("Error: No tile in X="+hexX+" Y="+hexY);
@@ -165,25 +178,27 @@ class CTilesMix {
         return CTilesMix( masterTS_idx, slaveTS_idx, state );
     }
     
-    string[] GetTilesMixName( uint16 hexX, uint16 hexY )
+    string@[] GetTilesMixName( uint16 hexX, uint16 hexY )
     {
-        string[] result = {};
-        string tileName = Map.GetTileName( hexX, hexY, false, 0 );
-        if (tileName != "")
+        string@[] result = {};
+        if( hexX < Map.Width and hexY < Map.Height )
         {
-            result.insertLast( substring( tileName, 13, 3 ) );
-            result.insertLast( substring( tileName, 16, 3 ) );
-            result.insertLast( substring( tileName, 19, 1 ) ); // TilesMix State
+            string@ tileName = Map.GetTileName( hexX, hexY, false, 0 );
+            if (tileName != "")
+            {
+                result.insertLast( substring( tileName, 13, 3 ) );
+                result.insertLast( substring( tileName, 16, 3 ) );
+                result.insertLast( substring( tileName, 19, 1 ) ); // TilesMix State
+            }
         }
         return result;
     }
     
     int8 getStateByPostfix( string statePostfix )
     {
-        string[] postfixes = {"0", "1", "3", "2", "5", "a", "4", "b", "c", "d", "9", "8", "e", "7", "6"};
-        for ( uint8 i = 0; i < postfixes.length(); i++ )
+        for ( uint8 i = 0; i < Postfixes.length(); i++ )
         {
-            if ( postfixes[i] == statePostfix )
+            if ( Postfixes[i] == statePostfix )
             {
                 return i;
             }
@@ -200,36 +215,64 @@ class CTilesMix {
             Log("Not valid tilemix (probably no tile in place)");
             return null;
         }
-        string newTileMixName = GetName();
-        string oldTileMixName = mix.GetName();
-        if ( newTileMixName == oldTileMixName )
+        string newTilesMixName = GetName();
+        string oldTilesMixName = mix.GetName();
+        if ( newTilesMixName == oldTilesMixName )
         {
-            mix.State = mix.State | GetDirState( dir );
+            if (BaseTileSet.Name == mix.BaseTileSet.Name)
+            {
+                mix.State = (mix.State | Rol(SwapBits(GetDirState( dir, true ), dir))) ^ 15;
+            }
+            else
+            {
+                mix.State = mix.State | Rol(SwapBits(GetDirState( dir, true ), dir));
+            }
         }
         else
         {
             string newTileDirTileSets = GetTileDirName( dir );
-            CTileSet@ fsTileSet = GetFirstStepTileSet( newTileDirTileSets, hexX, hexY, dir );
-            if (fsTileSet.Name == BaseTileSet.Name) {
-                @mix.BaseTileSet = BaseTileSet;
-                @mix.ChildTileSet = fsTileSet;
-                mix.State = mix.State | DirMaxStates[( dir + 2 ) % 4];
+            CTilesMix@ fsTilesMix = GetFirstStepTilesMix( newTileDirTileSets, hexX, hexY, dir );
+            if ( !valid(fsTilesMix) )
+            {
+                @fsTilesMix = CTilesMix( -1, -1 );
+                @fsTilesMix.BaseTileSet = BaseTileSet;
+                @fsTilesMix.ChildTileSet = ChildTileSet;
             }
-            else {
-                @mix.BaseTileSet = fsTileSet;
-                @mix.ChildTileSet = BaseTileSet;
-                mix.State = mix.State | DirMaxStates[dir];
+            @mix.BaseTileSet = fsTilesMix.BaseTileSet;
+            @mix.ChildTileSet = fsTilesMix.ChildTileSet;
+            if (BaseTileSet.Name == mix.BaseTileSet.Name) // TODO: дублирование кода
+            {
+                mix.State = (Rol(SwapBits(GetDirState( dir, true ), dir))) ^ 15;
             }
-            Log(mix.BaseTileSet.Name + mix.ChildTileSet.Name);
+            else
+            {
+                mix.State = Rol(SwapBits(GetDirState( dir, true ), dir));
+            }
         }
         return mix;
     }
+    
+    uint8 SwapBits(uint8 bits, uint8 dir) {
+        uint8[] bpos = { 1, 0, 3, 2 };
+        uint8 i = bpos[dir];
+        uint8 j = ( bpos[dir] + 1 ) % 4;
+        uint8 x = ((bits >> i) ^ (bits >> j)) & 1;
+        return bits ^ ((x << i) | (x << j));
+    }
+    
+    uint8 Rol(uint8 bits)
+    {
+        uint8 t1, t2;
+        t1 = bits >> 2;
+        t2 = (bits << 2) & 15;
+        return t1|t2;
+    }
 
-    CTileSet@ GetFirstStepTileSet( string newTileNames, uint16 hexX, uint16 hexY, uint8 dir, uint8 steps = 1 )
+    CTilesMix@ GetFirstStepTilesMix( string newTileNames, uint16 hexX, uint16 hexY, uint8 dir, uint8 steps = 1 )
     {
         if( steps <= 30 )
         {
-            MoveHexByDir(hexX, hexY, dir, steps);
+            MoveHexByDir(hexX, hexY, dir * 2, steps);
             if( hexX >= Map.Width or hexY >= Map.Height )
             {
                 return null;
@@ -242,22 +285,22 @@ class CTilesMix {
             }
             string oldTileNames = mix.GetTileDirName( ( dir + 2 ) % 4 );
             uint8 pathLength = 0;
-            CTileSet fTS = GetFirstPathStep( newTileNames, oldTileNames, pathLength );
+            CTilesMix@ fTS = GetFirstPathStep( newTileNames, oldTileNames, pathLength );
             if (pathLength <= steps)
             {
                 return fTS;
             }
             else
             {
-                return GetFirstStepTileSet( newTileNames, hexX, hexY, dir, ++steps );
+                return GetFirstStepTilesMix( newTileNames, hexX, hexY, dir, ++steps );
             }
         }
         return null;
     }
 
-    CTileSet@ GetFirstPathStep( string newTileNames, string oldTileNames, uint8& length)
+    CTilesMix@ GetFirstPathStep( string newTileNames, string oldTileNames, uint8&out length)
     {
-        string[][] path(4);
+        string@[][] path(4);
         string start1 = substring( newTileNames, 0, 3 );
         string start2 = substring( newTileNames, 3, 3 );
         string finish1 = substring( oldTileNames, 0, 3 );
@@ -267,18 +310,28 @@ class CTilesMix {
         path[2] = GetPath( start2, finish1);
         path[3] = GetPath( start2, finish2);
         string shortPathStart = "";
-        uint8 shortestPathLength = uint8(-1);
+        uint8 shortestPathIdx = uint8(-1);
+        length = uint8(-1);
         for ( uint8 i = 0; i < 4; i++ )
         {
-            if ( path.length() < shortestPathLength )
+            if ( path[i].length() < length and path[i].length() != 0 )
             {
                 shortPathStart = path[i][0];
-                shortestPathLength = path[i].length();
+                shortestPathIdx = i;
+                length = path[i].length();
             }
         }
-        length = shortestPathLength;
-        shortPathStart = substring(shortPathStart,0,3);
-        return TileSets[ GetTileSetIdx( shortPathStart ) ];
+        if ( length != uint8(-1) )
+        {
+            int8 shortPathStartBaseIdx = GetTileSetIdx(substring(shortPathStart, 0, 3));
+            int8 shortPathStartChildIdx = GetTileSetIdx(substring(shortPathStart, 3, 3));
+            bool inverted = shortPathStart.length() == 7 ? true : false;
+            return CTilesMix( shortPathStartBaseIdx, shortPathStartChildIdx, 0, inverted );
+        }
+        else
+        {
+            return null;
+        }
     }
 
     string GetName()
@@ -299,9 +352,16 @@ class CTilesMix {
         return baseName + childName;
     }
 
-    uint8 GetDirState( uint8 dir )
+    uint8 GetDirState( uint8 dir, bool notInverted = false )
     {
-        return State & DirMaxStates[dir];
+        if (notInverted)
+        {
+            return ~State & DirMaxStates[dir];
+        }
+        else
+        {
+            return State & DirMaxStates[dir];
+        }
     }
 
     string GetTileDirName(uint8 dir)
@@ -393,9 +453,9 @@ class CTileSet {
     }
 }
 
-string[] GetPath( string tileNameNew, string tileNameOld )
+string@[] GetPath( string tileNameNew, string tileNameOld )
 {
-    string[] tilePathNew, tilePathOld, result;
+    string@[] tilePathNew, tilePathOld, result = {};
     int8 newTileSetIdx, oldTileSetIdx, tileSetIdx;
     newTileSetIdx = GetTileSetIdx( tileNameNew );
     oldTileSetIdx = GetTileSetIdx( tileNameOld );
@@ -451,9 +511,9 @@ string[] GetPath( string tileNameNew, string tileNameOld )
     return result;
 }
 
-string[] GetTileSetPath( uint8 tileSetIdx )
+string@[] GetTileSetPath( uint8 tileSetIdx )
 {
-    string[] path = {};
+    string@[] path = {};
     while( TileSets[ tileSetIdx ].ParentName != "" )
     {
         path.insertLast( TileSets[ tileSetIdx ].ParentName + TileSets[ tileSetIdx ].Name );
