@@ -426,6 +426,7 @@
 #define DAMAGE_COUNT                             ( DAMAGE_END - DAMAGE_BEGIN + 1 )
 #define DAMAGE_POISONED                          ( 500 ) // Hardcoded
 #define DAMAGE_RADIATED                          ( 501 ) // Hardcoded
+#define DAMAGE_EYE                               ( 502 )
 #define DAMAGE_RIGHT_ARM                         ( 503 ) // Hardcoded
 #define DAMAGE_LEFT_ARM                          ( 504 ) // Hardcoded
 #define DAMAGE_RIGHT_LEG                         ( 505 ) // Hardcoded
@@ -922,8 +923,8 @@
 
 // Paths
 // Client and mapper paths
-#define PT_ROOT                                  ( 0 )
-#define PT_DATA                                  ( 1 )
+#define PT_ROOT                                  ( -1 )
+#define PT_DATA                                  ( 0 )
 #define PT_ART                                   ( 2 )
 #define PT_ART_CRITTERS                          ( 3 )
 #define PT_ART_INTRFACE                          ( 4 )
@@ -1063,34 +1064,6 @@
 
 # ifdef __SERVER
 #  pragma bindfield "uint Critter::GlobalMapMoveCounter -> 0"
-
-#  pragma bindfunc "bool Critter::IsInjured()    -> fonline_tla.dll Critter_IsInjured   "
-#  pragma bindfunc "bool Critter::IsDmgEye()     -> fonline_tla.dll Critter_IsDmgEye    "
-#  pragma bindfunc "bool Critter::IsDmgLeg()     -> fonline_tla.dll Critter_IsDmgLeg    "
-#  pragma bindfunc "bool Critter::IsDmgTwoLeg()  -> fonline_tla.dll Critter_IsDmgTwoLeg "
-#  pragma bindfunc "bool Critter::IsDmgArm()     -> fonline_tla.dll Critter_IsDmgArm    "
-#  pragma bindfunc "bool Critter::IsDmgTwoArm()  -> fonline_tla.dll Critter_IsDmgTwoArm "
-#  pragma bindfunc "bool Critter::IsAddicted()   -> fonline_tla.dll Critter_IsAddicted  "
-#  pragma bindfunc "bool Critter::IsOverweight() -> fonline_tla.dll Critter_IsOverweight"
-
-#  pragma bindfunc "bool Item::Weapon_IsHtHAttack(uint8 mode)    -> fonline_tla.dll Item_Weapon_IsHtHAttack   "
-#  pragma bindfunc "bool Item::Weapon_IsGunAttack(uint8 mode)    -> fonline_tla.dll Item_Weapon_IsGunAttack   "
-#  pragma bindfunc "bool Item::Weapon_IsRangedAttack(uint8 mode) -> fonline_tla.dll Item_Weapon_IsRangedAttack"
-# endif
-
-# ifdef __CLIENT
-#  pragma bindfunc "bool CritterCl::IsInjured()    -> fonline_tla_client.dll Critter_IsInjured  "
-#  pragma bindfunc "bool CritterCl::IsDmgEye()     -> fonline_tla_client.dll Critter_IsDmgEye   "
-#  pragma bindfunc "bool CritterCl::IsDmgLeg()     -> fonline_tla_client.dll Critter_IsDmgLeg   "
-#  pragma bindfunc "bool CritterCl::IsDmgTwoLeg()  -> fonline_tla_client.dll Critter_IsDmgTwoLeg"
-#  pragma bindfunc "bool CritterCl::IsDmgArm()     -> fonline_tla_client.dll Critter_IsDmgArm   "
-#  pragma bindfunc "bool CritterCl::IsDmgTwoArm()  -> fonline_tla_client.dll Critter_IsDmgTwoArm"
-#  pragma bindfunc "bool CritterCl::IsAddicted()   -> fonline_tla_client.dll Critter_IsAddicted "
-#  pragma bindfunc "bool CritterCl::IsOverweight() -> fonline_tla_client.dll Critter_IsOverweight"
-
-#  pragma bindfunc "bool ItemCl::Weapon_IsHtHAttack(uint8 mode)    -> fonline_tla_client.dll Item_Weapon_IsHtHAttack   "
-#  pragma bindfunc "bool ItemCl::Weapon_IsGunAttack(uint8 mode)    -> fonline_tla_client.dll Item_Weapon_IsGunAttack   "
-#  pragma bindfunc "bool ItemCl::Weapon_IsRangedAttack(uint8 mode) -> fonline_tla_client.dll Item_Weapon_IsRangedAttack"
 # endif
 
 // /
@@ -1149,7 +1122,8 @@
 #  pragma bindfunc "void TestFunc(string&) -> fonline_test.dll TestFunc"
 # endif
 # ifdef __CLIENT
-#  pragma bindfunc "void TestFunc(string&) -> fonline_test_client.dll TestFunc"
+// Next line produce error due to disabled AllowClientNativeCalls
+// #  pragma bindfunc "void TestFunc(string&) -> fonline_test_client.dll TestFunc"
 # endif
 
 #endif // SKIP_PRAGMAS

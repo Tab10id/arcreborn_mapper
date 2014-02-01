@@ -179,14 +179,13 @@ void InitializeGame()                    // Export
     #  endif
 
     // / Parameters behavoiours
-    #  ifndef __CLIENT
-    string FonlineDllName = "fonline_tla.dll@";
-    string ArcDllName = "fonline_arc.dll@";
-    #  endif
-    #  ifdef __CLIENT
-    string FonlineDllName = "fonline_tla_client.dll@";
-    string ArcDllName = "fonline_arc_client.dll@";
-    #  endif
+    /*#  ifndef __CLIENT
+       string dllName = "fonline_tla.dll@";
+     #  endif
+     #  ifdef __CLIENT
+       string dllName = "fonline_tla_client.dll@";
+     #  endif*/
+    string ArcDllName = "parameters@";
     SetParameterGetBehaviour( ST_STRENGTH_DONT_USE, ArcDllName + "getSPECIALParam"                 );
     SetParameterGetBehaviour( ST_PERCEPTION_DONT_USE, ArcDllName + "getSPECIALParam"               );
     SetParameterGetBehaviour( ST_ENDURANCE_DONT_USE, ArcDllName + "getSPECIALParam"                );
@@ -221,6 +220,9 @@ void InitializeGame()                    // Export
     SetParameterChangeBehaviour( MODE_HIDE, "parameters@changedParam_Hide"                         );
     SetParameterChangeBehaviour( TRAIT_FAST_SHOT, "parameters@changedParam_FastShot"               );
     SetParameterDialogGetBehaviour( ST_INTELLECT, "parameters@getParamDialog_Intellect"            );
+    SetParameterChangeBehaviour( ST_DEXTERITY, "parameters@changedParam_Dex"                       );
+    SetParameterChangeBehaviour( ST_SPEED, "parameters@changedParam_Speed"                         );
+    
     for( uint i = REPUTATION_BEGIN; i <= REPUTATION_END; i++ )
         SetParameterDialogGetBehaviour( i, "parameters@getParamDialog_Reputation"                  );
     #  endif
@@ -341,12 +343,12 @@ void InitializeGeometry()
 
     case GEOMETRY_ARCANUM:
         __MapHexagonal     = false;
-        __MapHexWidth      = 78;
+        __MapHexWidth      = 80;
         __MapHexHeight     = 40;
         __MapHexLineHeight = 20;
-        __MapTileOffsX     = 39;
+        __MapTileOffsX     = 40;
         __MapTileOffsY     = 40;
-        __MapRoofOffsX     = -82;
+        __MapRoofOffsX     = -80;
         __MapRoofOffsY     = -180;
         __MapRoofSkipSize  = 4;
         __MapCameraAngle   = 30.0f;

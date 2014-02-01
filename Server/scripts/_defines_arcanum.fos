@@ -28,6 +28,7 @@
 
 #define ST_BODY_TYPE                             ( 67 ) // Тип криттера или брони под криттер. 
 #define ST_DAMAGE_TYPE                           ( 69 ) // Тип дамаг. 
+#define ST_SPEED                                 ( 70 )
 #define ST_VAR0                                  ( 90 )
 #define ST_VAR1                                  ( 91 )
 #define ST_VAR2                                  ( 92 )

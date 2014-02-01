@@ -306,7 +306,8 @@ void mouse_move( int x, int y )
 // //////////////////////////////////////////////////////////////////////////////////////////////////
 // Called on mouse/keyboard input lost (alt-tab, minimize, lost focus).
 void input_lost()
-{}
+{
+}
 
 
 

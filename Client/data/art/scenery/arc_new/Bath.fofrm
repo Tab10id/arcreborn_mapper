@@ -3,13 +3,13 @@ count=10
 anim=true
 
 [dir_0]
-frm_0=Bath\Bath00.bmp
-frm_1=Bath\Bath01.bmp
-frm_2=Bath\Bath02.bmp
-frm_3=Bath\Bath03.bmp
-frm_4=Bath\Bath04.bmp
-frm_5=Bath\Bath05.bmp
-frm_6=Bath\Bath06.bmp
-frm_7=Bath\Bath07.bmp
-frm_8=Bath\Bath08.bmp
-frm_9=Bath\Bath09.bmp
+frm_0=Bath\Bath00.png
+frm_1=Bath\Bath01.png
+frm_2=Bath\Bath02.png
+frm_3=Bath\Bath03.png
+frm_4=Bath\Bath04.png
+frm_5=Bath\Bath05.png
+frm_6=Bath\Bath06.png
+frm_7=Bath\Bath07.png
+frm_8=Bath\Bath08.png
+frm_9=Bath\Bath09.png

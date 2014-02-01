@@ -116,7 +116,7 @@ class CTilesMix {
     {
         Map.DeleteTile( hexX, hexY, false, 0 );
         Map.AddTile( hexX, hexY, 0, 0, 0, false, GetTileNameHash() );
-        for ( uint8 dir = 0; dir < 3; dir++ ) // TODO: Для теста расчет только в одном направлении
+        for ( uint8 dir = 0; dir < 1; dir++ ) // TODO: Для теста расчет только в одном направлении
         {
             uint16 newHexX = hexX;
             uint16 newHexY = hexY;
